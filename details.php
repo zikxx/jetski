@@ -6,7 +6,7 @@
 </div>
 <div class="form-group">
 	<label>First name::</label><input type="text" id="first_name"
-		name="first_name" value="" class="col-md-offset-1 col-md-10" required>
+		name="first_name" value="" class="col-md-offset-1 col-md-10">
 </div>
 <div class="form-group">
 	<label>Last name:</label><input type="text" id="last_name"
