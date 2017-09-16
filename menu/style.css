@@ -1,0 +1,30 @@
+body {
+	background-color: rgba(36, 51, 66, 1);
+}
+
+#wizard-step-container {
+	margin: 20px 0;
+}
+
+#wizard-content-container {
+	margin: 20px 0;
+}
+
+#wizard-navigation-container {
+	border-top: 1px solid #eee;
+	margin: 20px 0;
+	padding-top: 20px;
+}
+
+input[type="radio"]:checked {
+	height: 20px;
+	width: 20px;
+}
+
+h2 {
+	color: white;
+}
+
+label {
+	background-color: rgba(36, 51, 66, 1);
+}

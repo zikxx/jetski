@@ -1,5 +1,5 @@
 <?php
-include ("head.php");
+include("head.php");
 ?>
 <h2 style="color: white; text-align: center;">Create new user</h2>
 <form class="form-horizontal">
@@ -7,14 +7,14 @@ include ("head.php");
 		<label for="inputEmail3" class="control-label"></label>
 		<div class="col-sm-offset-2 col-sm-8">
 			<input type="text" name="name" class="form-control" id="name"
-				placeholder="Username">
+				   placeholder="Username">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputPassword3" class="col-sm-2 control-label"></label>
 		<div class="col-sm-8">
 			<input type="text" name="phone" class="form-control" id="phone"
-				placeholder="Password">
+				   placeholder="Password">
 		</div>
 	</div>
 	<div class="form-group">
@@ -30,8 +30,9 @@ include ("head.php");
 		<label for="inputPassword3" class="col-sm-2 control-label"></label>
 		<div class="col-sm-8">
 			<input type="hidden" name="reg_date" class="form-control"
-				id="reg_date"
-				value="<?php date_default_timezone_set("Asia/Nicosia");echo(date("Y-m-d h:i:s"));?>">
+				   id="reg_date"
+				   value="<?php date_default_timezone_set("Asia/Nicosia");
+				   echo(date("Y-m-d h:i:s")); ?>">
 		</div>
 	</div>
 	<div class="form-group">
