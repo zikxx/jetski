@@ -1,0 +1,18 @@
+<h3 style="font-weight: bold;">Add a Student</h3>
+<form name="form" ng-submit="add_student(student_name, student_email)">
+	<div class="alert alert-success" ng-show="msg">
+		<strong>Success!</strong> User Added!.
+	</div>
+	<div class="form-group">
+		<label for="student_name">Name</label>
+		<input class="form-control" type="text" name="student_name" ng-model="student_name" required/>
+	</div>
+	<div class="form-group">
+		<label for="student_name">Email</label>
+		<input class="form-control" type="email" name="student_email" ng-model="student_email" required/>
+	</div>
+	</div>
+	<br/>
+	<button type="submit" class="btn btn-primary">Submit</button>
+	<a href="#" class="btn btn-warning">Go Back</button>
+</form>
