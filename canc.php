@@ -10,7 +10,7 @@ include("head.php");
 	$stmt->execute();
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	?>
-	<form action="cancel.php" id="cancel" method="POST">
+	<form action="includes/cancel.php" id="cancel" method="POST">
 		<?php
 		foreach ($results as $row) {
 			?>

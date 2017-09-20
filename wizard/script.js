@@ -1,6 +1,7 @@
 (function () {
 
     angular.module('app', []);
+    angular.module('app', ['moment-picker']);
     angular.module('app').controller("WizardController", [wizardController]);
 
     function wizardController() {
@@ -38,23 +39,6 @@
                     return vm.steps[i].template;
                 }
             }
-        }
-
-
-        vm.save = function ($http) {
-            $http.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
-            data = {
-                'email': vm.user.name,
-                'password': vm.user.email
-            };
-
-            $http.post('submit.php', data)
-                .success(function (data, status, headers, config) {
-                    console.log(status + ' - ' + data);
-                })
-                .error(function (data, status, headers, config) {
-                    console.log('error');
-                });
         }
     }
 })();

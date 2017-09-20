@@ -3,9 +3,6 @@
 require("head.php");
 ?>
 <div id="page">
-	<div class="header">
-		<a href="#menu" style="position: fixed;">Menu</a><br>
-	</div>
 	<h2 style="text-align: center; color: white;">Centurion</h2>
 	<table class="table" style="text-align: center; color: white;">
 		<tr style="font-weight: bold;">

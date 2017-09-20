@@ -31,4 +31,9 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 	</select><br>
 	<label>Price:</label><br>
-	<input type="number" class="form-control"></div>
+	<input type="number" class="form-control">
+	<div>
+		<label>Start date:</label><br>
+		<input class="form-control" moment-picker="ctrl.dateFormatted" ng-model="ctrl.momentDate" format="YYYY-MM-DD HH:mm:00">
+	</div>
+</div>
