@@ -2,803 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790aa653-c120-4703-b7d6-60cae9741826" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/activity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_activity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_inventory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_member.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_menu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_submenu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/add_subtask.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-moment-picker" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/build/build.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/build/build_standalone.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datetimepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/bootstrap-datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ee.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.hy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.no.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.ua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/less/datetimepicker.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/minify.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v2/jquery/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/sample in bootstrap v3/jquery/jquery-1.8.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_day.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_day_meridian.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_decade.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_full.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_hour.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_hour_meridian.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_month.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/screenshot/standard_year.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/_coverage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/coverage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/mock.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/qunit-logging.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/assets/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/run-qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/formats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/inline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/keyboard_navigation/2011.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/keyboard_navigation/2012.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/keyboard_navigation/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/mouse_navigation/2011.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/mouse_navigation/2012.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/mouse_navigation/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/suites/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/datepicker/tests/tests.min.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/delete_customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/delete_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/delete_inventory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/delete_member.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/demo/advanced.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/demo/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/demo/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/demo/default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/demo/onepage.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/autoheight/jquery.mmenu.autoheight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/autoheight/jquery.mmenu.autoheight.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/backbutton/jquery.mmenu.backbutton.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/columns/jquery.mmenu.columns.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/columns/jquery.mmenu.columns.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/counters/jquery.mmenu.counters.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/counters/jquery.mmenu.counters.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/dividers/jquery.mmenu.dividers.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/dividers/jquery.mmenu.dividers.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/drag/jquery.mmenu.drag.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/drag/jquery.mmenu.drag.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/dropdown/jquery.mmenu.dropdown.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/dropdown/jquery.mmenu.dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/fixedelements/jquery.mmenu.fixedelements.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/iconpanels/jquery.mmenu.iconpanels.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/iconpanels/jquery.mmenu.iconpanels.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/keyboardnavigation/jquery.mmenu.keyboardnavigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/keyboardnavigation/jquery.mmenu.keyboardnavigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/lazysubmenus/jquery.mmenu.lazysubmenus.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/navbars/jquery.mmenu.navbars.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/navbars/jquery.mmenu.navbars.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/offcanvas/jquery.mmenu.offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/offcanvas/jquery.mmenu.offcanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/rtl/jquery.mmenu.rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/rtl/jquery.mmenu.rtl.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/screenreader/jquery.mmenu.screenreader.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/screenreader/jquery.mmenu.screenreader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/scrollbugfix/jquery.mmenu.scrollbugfix.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/searchfield/jquery.mmenu.searchfield.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/searchfield/jquery.mmenu.searchfield.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/sectionindexer/jquery.mmenu.sectionindexer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/sectionindexer/jquery.mmenu.sectionindexer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/setselected/jquery.mmenu.setselected.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/setselected/jquery.mmenu.setselected.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/toggles/jquery.mmenu.toggles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/addons/toggles/jquery.mmenu.toggles.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/css/jquery.mmenu.all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/css/jquery.mmenu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/css/jquery.mmenu.oncanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/borderstyle/jquery.mmenu.borderstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/effects/jquery.mmenu.effects.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/fullscreen/jquery.mmenu.fullscreen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/iconbar/jquery.mmenu.iconbar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/justifiedlistview/jquery.mmenu.justifiedlistview.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/multiline/jquery.mmenu.multiline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/pagedim/jquery.mmenu.pagedim.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/popup/jquery.mmenu.popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/positioning/jquery.mmenu.positioning.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/shadows/jquery.mmenu.shadows.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/themes/jquery.mmenu.themes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/tileview/jquery.mmenu.tileview.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/extensions/widescreen/jquery.mmenu.widescreen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/js/jquery.mmenu.all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/js/jquery.mmenu.all.min.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/js/jquery.mmenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/js/jquery.mmenu.min.umd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/js/jquery.mmenu.oncanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/angular/jquery.mmenu.angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/bootstrap/jquery.mmenu.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/bootstrap/jquery.mmenu.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/jquerymobile/jquery.mmenu.jquerymobile.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/magento/jquery.mmenu.magento.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/olark/jquery.mmenu.olark.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/turbolinks/jquery.mmenu.turbolinks.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/dist/wrappers/wordpress/jquery.mmenu.wordpress.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/mmenu.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/autoheight/jquery.mmenu.autoheight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/autoheight/jquery.mmenu.autoheight.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/backbutton/jquery.mmenu.backbutton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/columns/jquery.mmenu.columns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/columns/jquery.mmenu.columns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/counters/jquery.mmenu.counters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/counters/jquery.mmenu.counters.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/dividers/jquery.mmenu.dividers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/dividers/jquery.mmenu.dividers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/drag/jquery.mmenu.drag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/drag/jquery.mmenu.drag.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/dropdown/jquery.mmenu.dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/dropdown/jquery.mmenu.dropdown.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/fixedelements/jquery.mmenu.fixedelements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/iconpanels/jquery.mmenu.iconpanels.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/iconpanels/jquery.mmenu.iconpanels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/keyboardnavigation/jquery.mmenu.keyboardnavigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/keyboardnavigation/jquery.mmenu.keyboardnavigation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/lazysubmenus/jquery.mmenu.lazysubmenus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.breadcrumbs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.close.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.next.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.prev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.searchfield.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbar.title.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/navbars/jquery.mmenu.navbars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/offcanvas/jquery.mmenu.offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/offcanvas/jquery.mmenu.offcanvas.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/rtl/jquery.mmenu.rtl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/rtl/jquery.mmenu.rtl.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/screenreader/jquery.mmenu.screenreader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/screenreader/jquery.mmenu.screenreader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/scrollbugfix/jquery.mmenu.scrollbugfix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/searchfield/jquery.mmenu.searchfield.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/searchfield/jquery.mmenu.searchfield.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/sectionindexer/jquery.mmenu.sectionindexer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/sectionindexer/jquery.mmenu.sectionindexer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/setselected/jquery.mmenu.setselected.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/setselected/jquery.mmenu.setselected.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/toggles/jquery.mmenu.toggles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/addons/toggles/jquery.mmenu.toggles.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_dividers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_inset_lists.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_listviews.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_navbars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_spacers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_core/_vertical.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_import.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_mixins_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_mixins_colors.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_mixins_general.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_mixins_sizing.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/_imp/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/css/jquery.mmenu.oncanvas.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/borderstyle/jquery.mmenu.borderstyle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/effects/jquery.mmenu.effects.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/fullscreen/jquery.mmenu.fullscreen.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/iconbar/jquery.mmenu.iconbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/justifiedlistview/jquery.mmenu.justifiedlistview.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/multiline/jquery.mmenu.multiline.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/pagedim/jquery.mmenu.pagedim.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/popup/jquery.mmenu.popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/positioning/jquery.mmenu.positioning.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/shadows/jquery.mmenu.shadows.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/themes/jquery.mmenu.themes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/tileview/jquery.mmenu.tileview.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/extensions/widescreen/jquery.mmenu.widescreen.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/jquery,mmenu.addon-template.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/jquery.mmenu.debugger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/js/jquery.mmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/js/jquery.mmenu.oncanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/angular/jquery.mmenu.angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/bootstrap/jquery.mmenu.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/bootstrap/jquery.mmenu.bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/jquerymobile/jquery.mmenu.jquerymobile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/magento/jquery.mmenu.magento.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/olark/jquery.mmenu.olark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/turbolinks/jquery.mmenu.turbolinks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jQuery.mmenu-master/src/wrappers/wordpress/jquery.mmenu.wordpress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/andorid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/andorid.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/angular-moment-picker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/angular-moment-picker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/asd.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/basichtml.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/basichtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/basichtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/basichtml/modernizr.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/addremove/addremove.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/addremove/addremove.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/addremove/addremove.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basichtml/basichtml.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basichtml/basichtml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basichtml/basichtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basicjs/basicjs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basicjs/basicjs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/basicjs/basicjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/bootstrap/bootstrap_integration.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/bootstrap/bootstrap_integration.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/bootstrap/bootstrap_integration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/collapsed/collapsed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/collapsed/collapsed.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/collapsed/collapsed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/covermode/covermode.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/covermode/covermode.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/covermode/covermode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/customsize/customsize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/customsize/customsize.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/customsize/customsize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/events/events.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/events/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/events/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/expandcollapse/expandcollapse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/expandcollapse/expandcollapse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/expandcollapse/expandcollapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/fullexpandcollapse/fullexpandcollapse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/fullexpandcollapse/fullexpandcollapse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/fullexpandcollapse/fullexpandcollapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/fullexpandcollapse/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/jquery.multilevelpushmenu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/jquery.multilevelpushmenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/jquery.multilevelpushmenu_brown.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/jquery.multilevelpushmenu_grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/jquery.multilevelpushmenu_red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/options/options.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/options/options.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/options/options.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/pushmany/pushmany.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/pushmany/pushmany.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/pushmany/pushmany.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/responsive/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/responsive/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/responsive/responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/responsive/responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/rtl/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/rtl/rtl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/demo/rtl/rtl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/jquery.multilevelpushmenu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/jquery.multilevelpushmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/jquery.multilevelpushmenu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/jquery.multilevelpushmenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/jquery.multilevelpushmenu.min.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/mobiscroll.css.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/mobiscroll.js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/multilevelpushmenu.jquery.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/step1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/step2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/step3.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/step4.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/menu/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_activity.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_inventory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/new_member.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/.vscode/settings.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/.vscode/tasks.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/angular-moment-picker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/angular-moment-picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/angular-moment-picker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/angular-moment-picker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/themes/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/themes/material-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/dist/themes/material-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/definitions.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/helpers.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/index.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/provider.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/template.tpl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/themes/material-ui.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/utility.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/dayView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/decadeView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/hourView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/minuteView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/monthView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/src/views/yearView.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/elementCreation.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/hacks.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/openClosePicker.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/properties/isOpen.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/properties/keyboard.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/properties/locale.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/properties/startDate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/properties/validate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/utility.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tests/value.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular-moment-picker/webpack.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/ender.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-dz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-kw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-ly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar-tn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/dv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-ie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/en-nz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/es-do.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/fy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/gom-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/hy-am.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/jv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/kn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/mr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ms-my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ne.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nl-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/nn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pa-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/se.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/te.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tl-ph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tlh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzm-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/tzm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/ur.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uz-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/uz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/x-pseudo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/yo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/locale/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/locales.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/locales.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment-with-locales.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/min/moment.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/moment.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/check-overflow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/date-from-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-anything.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string-and-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string-and-format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/from-string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/local.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/parsing-flags.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/utc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/create/valid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/abs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/add-subtract.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/as.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/bubble.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/constructor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/create.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/duration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/humanize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/iso-string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/duration/valid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/format/format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/base-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/constructor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/formats.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/invalid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/lists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/locale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/locales.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/ordinal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/pre-post-format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/relative.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/locale/set.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/add-subtract.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/clone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/compare.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/constructor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/creation-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/from.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/get-set.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/locale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/min-max.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/now.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/start-end-of.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/to-type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/to.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/moment/valid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/parse/regex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/parse/token.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/aliases.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/constants.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-month.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-week.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/day-of-year.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/hour.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/millisecond.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/minute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/month.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/offset.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/priorities.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/quarter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/second.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/timestamp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/timezone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/units.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week-calendar-utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week-year.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/week.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/units/year.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-ceil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-floor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/abs-round.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/compare-arrays.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/defaults.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/deprecate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/extend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/has-own-prop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/hooks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/index-of.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-array.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-date.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-number.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-object-empty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-object.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/is-undefined.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/keys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/some.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/to-int.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/lib/utils/zero-fill.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/af.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-dz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-kw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-ly.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-ma.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-sa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar-tn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/bs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/cy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de-at.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/dv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-au.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-gb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-ie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/en-nz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/es-do.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/et.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr-ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/fy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/gom-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/hy-am.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/jv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ka.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/kk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/kn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/mr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ms-my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/my.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ne.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nl-be.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/nn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pa-in.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/se.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/si.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sr-cyrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ss.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/te.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tl-ph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tlh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzm-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/tzm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/ur.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uz-latn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/uz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/x-pseudo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/yo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-hk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/locale/zh-tw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/moment/src/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upd_customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upd_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upd_inventory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/upd_member.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_customer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_driver.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_inventory.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/update_member.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cancel.php" afterPath="$PROJECT_DIR$/includes/cancel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular.php" afterPath="$PROJECT_DIR$/angular.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/canc.php" afterPath="$PROJECT_DIR$/canc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/asd/view/list.html" afterPath="$PROJECT_DIR$/wizard/asd/view/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/asd/js/controller.js" afterPath="$PROJECT_DIR$/wizard/asd/js/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/asd/php/add_student.php" afterPath="$PROJECT_DIR$/wizard/asd/php/add_student.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/asd/php/student_list.php" afterPath="$PROJECT_DIR$/wizard/asd/php/student_list.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/asd/view/add.html" afterPath="$PROJECT_DIR$/wizard/asd/view/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/index.php" afterPath="$PROJECT_DIR$/wizard/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/script.js" afterPath="$PROJECT_DIR$/wizard/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/step1.php" afterPath="$PROJECT_DIR$/wizard/step1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/step3.php" afterPath="$PROJECT_DIR$/wizard/step3.php" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -839,7 +50,96 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/asd/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/asd/view/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/step1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="224" column="22" lean-forward="true" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
+              <folding>
+                <marker date="1505941868503" expanded="true" signature="259:277" ph="SELECT * FRO... menu" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/step2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+              <folding>
+                <marker date="1505855198502" expanded="true" signature="330:371" ph="SELECT * FRO... members" />
+                <marker date="1505855198502" expanded="true" signature="710:752" ph="SELECT * FRO... drivers_shippers" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="step3.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wizard/step3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <marker date="1505941963956" expanded="true" signature="218:237" ph="SELECT * FRO... price" />
+                <marker date="1505941963956" expanded="true" signature="614:635" ph="SELECT * FRO... payment" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/asd/js/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="55" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wizard/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -853,6 +153,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>style='color:white;'</find>
+      <find>stu</find>
+      <find>stude</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -886,7 +188,6 @@
         <option value="$PROJECT_DIR$/wizard/picker/v3/index.html" />
         <option value="$PROJECT_DIR$/wizard/index.html" />
         <option value="$PROJECT_DIR$/menu/step1.php" />
-        <option value="$PROJECT_DIR$/wizard/step1.php" />
         <option value="$PROJECT_DIR$/head.php" />
         <option value="$PROJECT_DIR$/wizard/style.css" />
         <option value="$PROJECT_DIR$/wizard/step2.php" />
@@ -895,23 +196,24 @@
         <option value="$PROJECT_DIR$/wizard/asd/asd.html" />
         <option value="$PROJECT_DIR$/wizard/asd/php/config.php" />
         <option value="$PROJECT_DIR$/wizard/asd/js/app.js" />
-        <option value="$PROJECT_DIR$/wizard/asd/js/controller.js" />
-        <option value="$PROJECT_DIR$/wizard/asd/php/student_list.php" />
         <option value="$PROJECT_DIR$/wizard/asd/index.html" />
         <option value="$PROJECT_DIR$/datepicker/sample in bootstrap v3/index.html" />
-        <option value="$PROJECT_DIR$/wizard/asd/php/add_student.php" />
         <option value="$PROJECT_DIR$/menu/andorid.html" />
         <option value="$PROJECT_DIR$/asd/demo/index.html" />
         <option value="$PROJECT_DIR$/js/angular-moment-picker.min.js" />
         <option value="$PROJECT_DIR$/css/angular-moment-picker.min.css" />
         <option value="$PROJECT_DIR$/angular.php" />
-        <option value="$PROJECT_DIR$/wizard/index.php" />
-        <option value="$PROJECT_DIR$/wizard/script.js" />
-        <option value="$PROJECT_DIR$/wizard/step3.php" />
-        <option value="$PROJECT_DIR$/wizard/asd/view/add.html" />
-        <option value="$PROJECT_DIR$/wizard/asd/view/list.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/canc.php" />
+        <option value="$PROJECT_DIR$/wizard/asd/php/student_list.php" />
+        <option value="$PROJECT_DIR$/wizard/asd/view/list.html" />
+        <option value="$PROJECT_DIR$/wizard/asd/php/add_student.php" />
+        <option value="$PROJECT_DIR$/wizard/asd/js/controller.js" />
+        <option value="$PROJECT_DIR$/wizard/step1.php" />
+        <option value="$PROJECT_DIR$/wizard/step3.php" />
+        <option value="$PROJECT_DIR$/wizard/script.js" />
+        <option value="$PROJECT_DIR$/wizard/index.php" />
+        <option value="$PROJECT_DIR$/wizard/asd/view/add.html" />
       </list>
     </option>
   </component>
@@ -954,6 +256,31 @@
             <path>
               <item name="jetski" type="b2602c69:ProjectViewProjectNode" />
               <item name="jetski" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jetski" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetski" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wizard" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jetski" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetski" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wizard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="asd" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jetski" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetski" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wizard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="asd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="jetski" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jetski" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wizard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="asd" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -1009,21 +336,22 @@
       <workItem from="1505572622170" duration="3520000" />
       <workItem from="1505771475103" duration="2286000" />
       <workItem from="1505848450560" duration="8815000" />
-      <workItem from="1505926112544" duration="10726000" />
+      <workItem from="1505926112544" duration="15023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25540000" />
+    <option name="totallyTimeSpent" value="29837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16944024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48487142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1061,16 +389,6 @@
     <entry file="file://$PROJECT_DIR$/wizard/picker/v3/index.html" />
     <entry file="file://$PROJECT_DIR$/wizard/index.html" />
     <entry file="file://$PROJECT_DIR$/wizard/angular.php" />
-    <entry file="file://$PROJECT_DIR$/wizard/step1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="179" column="46" lean-forward="false" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
-          <folding>
-            <marker date="1505854759234" expanded="true" signature="259:277" ph="SELECT * FRO... menu" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menu/step1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1100,17 +418,6 @@
         <state relative-caret-position="459">
           <caret line="27" column="72" lean-forward="true" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/step2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding>
-            <marker date="1505855198502" expanded="true" signature="330:371" ph="SELECT * FRO... members" />
-            <marker date="1505855198502" expanded="true" signature="710:752" ph="SELECT * FRO... drivers_shippers" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1162,36 +469,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/php/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datepicker/sample in bootstrap v3/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/php/student_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <marker date="1505858858192" expanded="true" signature="58:80" ph="select * fro... students" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c9ff3489/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4/jetski.students">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1293,90 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="60" lean-forward="false" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/c9ff3489/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4/jetski.activities">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/step3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="36" column="117" lean-forward="false" selection-start-line="36" selection-start-column="117" selection-end-line="36" selection-end-column="117" />
-          <folding>
-            <marker date="1505937276516" expanded="true" signature="218:237" ph="SELECT * FRO... price" />
-            <marker date="1505937276516" expanded="true" signature="614:635" ph="SELECT * FRO... payment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/php/add_student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding>
-            <marker date="1505928119927" expanded="true" signature="223:300" ph="insert into students... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="89" lean-forward="false" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/view/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wizard/asd/view/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asd.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1446,6 +644,138 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="89" lean-forward="false" selection-start-line="17" selection-start-column="89" selection-end-line="17" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/php/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/php/student_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <marker date="1505939086035" expanded="true" signature="58:72" ph="select * fro... students" />
+            <marker date="1505939086035" expanded="true" signature="58:82" ph="select * fro... activities" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c9ff3489/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4/jetski.activities">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c9ff3489/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4/jetski.students">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/view/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="55" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/php/add_student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <folding>
+            <marker date="1505941348328" expanded="true" signature="1117:1218" ph="insert into activities... " />
+            <marker date="1505941348328" expanded="true" signature="1117:1490" ph="insert into students... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/asd/view/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/step1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="224" column="22" lean-forward="true" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
+          <folding>
+            <marker date="1505941868503" expanded="true" signature="259:277" ph="SELECT * FRO... menu" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/step2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <marker date="1505855198502" expanded="true" signature="330:371" ph="SELECT * FRO... members" />
+            <marker date="1505855198502" expanded="true" signature="710:752" ph="SELECT * FRO... drivers_shippers" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wizard/step3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <marker date="1505941963956" expanded="true" signature="218:237" ph="SELECT * FRO... price" />
+            <marker date="1505941963956" expanded="true" signature="614:635" ph="SELECT * FRO... payment" />
+          </folding>
         </state>
       </provider>
     </entry>

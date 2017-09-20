@@ -15,6 +15,7 @@ require_once '../dbconfig.php'; ?>
 	<script src="script.js"></script>
 	<script src="../js/moment.js"></script>
 	<script src="../js/angular-moment-picker.min.js"></script>
+	<script src="asd/js/controller.js"></script>
 </head>
 <body ng-app="app">
 <div class="container">

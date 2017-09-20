@@ -34,6 +34,6 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 	<input type="number" class="form-control">
 	<div>
 		<label>Start date:</label><br>
-		<input class="form-control" moment-picker="ctrl.dateFormatted" ng-model="ctrl.momentDate" format="YYYY-MM-DD HH:mm:00">
+		<input name="start" class="form-control" moment-picker="ctrl.dateFormatted" ng-model="ctrl.momentDate" format="YYYY-MM-DD HH:mm:00">
 	</div>
 </div>
