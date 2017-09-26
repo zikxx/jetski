@@ -33,11 +33,11 @@ studentModule.controller('AddController', ['$scope', '$http', '$timeout', functi
             refund: refund,
             comment: comment
 
-        }
+        };
 
         //use $http.post to send above data to php
 
-        $http.post('php/add_student.php', JSON.stringify(data)).then(function (response) {
+        $http.post('../php/add_student.php', JSON.stringify(data)).then(function (response) {
             //clear the form fields
             $scope.name = "";
             $scope.submenu = "";

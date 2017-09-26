@@ -23,6 +23,7 @@ require_once '../dbconfig.php'; ?>
 		<div class="col-md-12">
 			<h1>Add new reservation</h1>
 			<div id="wizard-container" ng-controller="WizardController as vm">
+				<form name="form" ng-submit="asd/php/add_student.php">
 				<div id="wizard-step-container">
 					<ul class="nav nav-pills nav-justified">
 						<li ng-repeat="step in vm.steps" ng-class="{'active':step.step == vm.currentStep}">
@@ -39,11 +40,12 @@ require_once '../dbconfig.php'; ?>
 							<button ng-disabled="vm.currentStep <= 1" class="btn btn-default" name="previous" type="button" ng-click="vm.gotoStep(vm.currentStep - 1)"><i class="fa fa-arrow-left"></i> Previous step</button>
 							<button ng-disabled="vm.currentStep >= vm.steps.length" class="btn btn-primary" name="next" type="button" ng-click="vm.gotoStep(vm.currentStep + 1)">Next step <i class="fa fa-arrow-right"></i></button>
 						</span>
-						<button ng-disabled="vm.currentStep != vm.steps.length" class="btn btn-success" name="next" type="button" ng-click="vm.save()">
+						<button ng-disabled="vm.currentStep != vm.steps.length" class="btn btn-success" name="next" type="submit">
 							<i class="fa fa-floppy-o"></i> Save
 						</button>
 					</div>
 				</div>
+				</form>
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,10 @@
 (function () {
 
+    angular.module('app', ['studentModule']);
     angular.module('app', []);
     angular.module('app', ['moment-picker']);
     angular.module('app').controller("WizardController", [wizardController]);
+
 
     function wizardController() {
         var vm = this;

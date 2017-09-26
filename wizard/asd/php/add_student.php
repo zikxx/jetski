@@ -21,5 +21,5 @@ $comment = mysqli_real_escape_string($con, $data->comment);
 $query = mysqli_query($con, "insert into activities (name, submenu, subtask, inflatables, payment, price,
 paid_price, paid, start, end, driver, type, first_name, last_name, status, refund, comment) 
 values ('$name', '$submenu', '$subtask', '$inflatables', '$payment', '$price', '$paid_price', '$paid', '$start', '$end',
-'$driver', '$type', '$first_name', '$last_name', '$status', '$refund', '$comment')")
+'$driver', '$type', '$first_name', '$last_name', 'Active', '$refund', '$comment')")
 or die ('Unable to execute query. ' . mysqli_error($con));
