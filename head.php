@@ -18,6 +18,7 @@ if (! isset ( $_SESSION ['id'] )) {
 <link rel="shortcut icon" href="pics/index.ico">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/default.css">
+<script src="js/angular.min.js"
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
@@ -32,7 +33,6 @@ if (! isset ( $_SESSION ['id'] )) {
 }
 
 body {
-	color: white;
 	background-color: rgba(36, 51, 66, 1);
 }
 </style>
