@@ -5,7 +5,7 @@ $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<form action="activity/add_activity.php" method="POST">
+<form action="add_activity.php" method="POST">
 	<div class="col-md-offset-2 col-md-4" style="color:white;">
 		<div class="form-group">
 			<label>Activity:</label><br>
@@ -32,7 +32,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 		<div class="form-group">
 			<label>Inflatables:</label><br/>
-			<select name="inflatables" id="inflatables" class="form-control";">
+			<select name="inflatables" id="inflatables" class="form-control";>
 				<option value=""></option>
 			</select>
 		</div>
@@ -71,7 +71,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>
 			<label><input type="checkbox" id="driver" checked> Driver</label>
 			<select name="driver" id="driver_select" class="form-control">
-				<option value="	"></option>
+				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
 					<option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 			</select>

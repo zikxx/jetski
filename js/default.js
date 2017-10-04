@@ -43,16 +43,17 @@ function getInflatable(val) {
         }
     });
 }
-$(document).ready(function(){
-    $("#member").click(function(){
+
+$(document).ready(function () {
+    $("#member").click(function () {
         $("#member_form").show();
         $("#customer_form").hide();
     });
-    $("#customer").click(function(){
+    $("#customer").click(function () {
         $("#member_form").hide();
         $("#customer_form").show();
     });
-    $("#driver").click(function(){
+    $("#driver").click(function () {
         $("#driver_select").toggle();
     });
 });
