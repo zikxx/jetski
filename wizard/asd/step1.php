@@ -10,7 +10,7 @@ if (!isset ($_SESSION ['id'])) {
 	<h2>Menu:</h2>
 	<?php
 	$sql = "SELECT * FROM menu";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	foreach ($results as $row) {

@@ -24,7 +24,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A1', 'Centurion')->setCellValue('A2', 'Start Time')->setCellValue('B2', 'Finish Time')->setCellValue('C2', 'Surname')->setCellValue('D2', 'Name')->setCellValue('E2', 'Instructor')->setCellValue('F2', 'Payment')->setCellValue('G2', 'Activity')->setCellValue('H2', 'Type')->setCellValue('I2', 'Equipment')->setCellValue('J2', 'Gender')->setCellValue('K2', 'Age')->setCellValue('L2', 'Weight')->setCellValue('M2', 'Shoe Size');
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask like 'Wakeboard - Centurion%' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A3');
@@ -32,7 +32,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A50', 'Mastercraft')->setCellValue('A51', 'Start Time')->setCellValue('B51', 'Finish Time')->setCellValue('C51', 'Surname')->setCellValue('D51', 'Name')->setCellValue('E51', 'Instructor')->setCellValue('F51', 'Payment')->setCellValue('G51', 'Activity')->setCellValue('H51', 'Type')->setCellValue('I51', 'Equipment')->setCellValue('J51', 'Gender')->setCellValue('K51', 'Age')->setCellValue('L51', 'Weight')->setCellValue('M51', 'Shoe Size');
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask like 'Wakeboard - Mastercraft%' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A52');
@@ -40,7 +40,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A100', 'Othelo 150HP')->setCellValue('A101', 'Start Time')->setCellValue('B101', 'Finish Time')->setCellValue('C101', 'Surname')->setCellValue('D101', 'Name')->setCellValue('E101', 'Instructor')->setCellValue('F101', 'Payment')->setCellValue('G101', 'Activity')->setCellValue('H101', 'Type')->setCellValue('I101', 'Equipment')->setCellValue('J101', 'Gender')->setCellValue('K101', 'Age')->setCellValue('L101', 'Weight')->setCellValue('M101', 'Shoe Size');
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask like 'Wakeboard - Othello 150HP%' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A102');
@@ -48,7 +48,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A150', 'Othelo 200HP')->setCellValue('A151', 'Start Time')->setCellValue('B151', 'Finish Time')->setCellValue('C151', 'Surname')->setCellValue('D151', 'Name')->setCellValue('E151', 'Instructor')->setCellValue('F151', 'Payment')->setCellValue('G151', 'Activity')->setCellValue('H151', 'Type')->setCellValue('I151', 'Equipment')->setCellValue('J151', 'Gender')->setCellValue('K151', 'Age')->setCellValue('L151', 'Weight')->setCellValue('M151', 'Shoe Size');
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask like 'Wakeboard - Othello 200HP%' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A152');
@@ -56,7 +56,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A200', 'Windsurfing')->setCellValue('A201', 'Start Time')->setCellValue('B201', 'Finish Time')->setCellValue('C201', 'Surname')->setCellValue('D201', 'Name')->setCellValue('E201', 'Instructor')->setCellValue('F201', 'Payment')->setCellValue('G201', 'Activity')->setCellValue('H201', 'Type')->setCellValue('I201', 'Equipment')->setCellValue('J201', 'Gender')->setCellValue('K201', 'Age')->setCellValue('L201', 'Weight')->setCellValue('M201', 'Shoe Size');
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask like 'Windsurfing' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A250');
@@ -65,7 +65,7 @@ $objPHPExcel->getActiveSheet()->setCellValue('A250', 'Other')->setCellValue('A25
 $sql = ("SELECT start, end, last_name, f_name, driver, payment, name, submenu, equipment, gender, age, weight, shoe_size 
 FROM activities where subtask NOT like 'Wakeboard - Centurion%' and subtask NOT like 'Wakeboard - Mastercraft%'
 	and subtask NOT like 'Wakeboard - Othelo%' and not name='Windsurfing' and start like '" . date("Y-m-d") . "%'");
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A252');

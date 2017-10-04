@@ -12,7 +12,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO drivers_shippers(name, phone, other)
+	$stmt = $conn->prepare("INSERT INTO drivers_shippers(name, phone, other)
 	VALUES (:name, :phone, :other)");
 	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
@@ -23,7 +23,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 }
 header("Location:driver.php");

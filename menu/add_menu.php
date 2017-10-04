@@ -10,7 +10,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO menu(menu_name) VALUES (:menu_name)");
+	$stmt = $conn->prepare("INSERT INTO menu(menu_name) VALUES (:menu_name)");
 	$stmt->bindParam(':menu_name', $name, PDO::PARAM_STR);
 	$stmt->execute();
 	$id = $stmt->fetchAll();
@@ -19,7 +19,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }

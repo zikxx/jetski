@@ -8,7 +8,7 @@ if (!isset ($_SESSION ['id'])) {
 } ?>
 <?php
 $sql = "SELECT * FROM price";
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -21,7 +21,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 	</select><br>
 	<?php
 	$sql = "SELECT * FROM payment";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>

@@ -23,7 +23,7 @@ $objPHPExcel->getProperties()->setCreator("Crest")
 
 
 
-	$res=$dbh->prepare("SELECT * FROM activities");
+	$res=$conn->prepare("SELECT * FROM activities");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
 	foreach($res as $row) { 

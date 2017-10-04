@@ -53,11 +53,11 @@ else {
 		/**
 		 * * set the error mode to excptions **
 		 */
-		$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		/**
 		 * * prepare the select statement **
 		 */
-		$stmt = $dbh->prepare("SELECT * FROM users
+		$stmt = $conn->prepare("SELECT * FROM users
                     WHERE username = :user AND password = :pass");
 		/**
 		 * * bind the parameters **

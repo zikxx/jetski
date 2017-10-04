@@ -4,7 +4,7 @@ include("head.php");
 <div class="col-md-offset-2 col-md-8" style="text-align: center;">
 	<?php
 	$sql = "SELECT * FROM customers ORDER BY id";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>

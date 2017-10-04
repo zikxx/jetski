@@ -21,7 +21,7 @@ require("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Centurion%' 
 			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -73,7 +73,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Mastercraft%' 
 			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -125,7 +125,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id,a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id,a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Othello 150HP%' 
 			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -177,7 +177,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Othello 200HP%' 
 			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -229,7 +229,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.name='Windsurfing' and a.start like '" . date("Y-m-d") . "%' 
 			ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -281,7 +281,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name activities where a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%' 
 			ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
@@ -333,7 +333,7 @@ FROM activities a inner join members m on a.last_name = m.last_name activities w
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.name='Yacht' and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
@@ -383,7 +383,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status,DATEDIFF(NOW(),m.age)/365 as age
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status,DATEDIFF(NOW(),m.age)/365 as age
 			, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name where a.subtask NOT like 'Wakeboard - Centurion%' 
 			and a.subtask NOT like 'Wakeboard - Mastercraft%'
@@ -453,7 +453,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -467,7 +467,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -530,7 +530,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -544,7 +544,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -607,7 +607,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -621,7 +621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -688,7 +688,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -702,7 +702,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -766,7 +766,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -780,7 +780,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -844,7 +844,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -858,7 +858,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -924,7 +924,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -938,7 +938,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1000,7 +1000,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1014,7 +1014,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1076,7 +1076,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1090,7 +1090,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1152,7 +1152,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1166,7 +1166,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1228,7 +1228,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1242,7 +1242,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1304,7 +1304,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1318,7 +1318,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1380,7 +1380,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1394,7 +1394,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1456,7 +1456,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1470,7 +1470,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1540,7 +1540,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1554,7 +1554,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1620,7 +1620,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1634,7 +1634,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1696,7 +1696,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1710,7 +1710,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1776,7 +1776,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1790,7 +1790,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1863,7 +1863,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1877,7 +1877,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1942,7 +1942,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -1956,7 +1956,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2023,7 +2023,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2037,7 +2037,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2102,7 +2102,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2116,7 +2116,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2181,7 +2181,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2195,7 +2195,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2260,7 +2260,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2274,7 +2274,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2339,7 +2339,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2353,7 +2353,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2418,7 +2418,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2432,7 +2432,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2497,7 +2497,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2511,7 +2511,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2576,7 +2576,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2590,7 +2590,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2655,7 +2655,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2669,7 +2669,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2736,7 +2736,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2750,7 +2750,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2815,7 +2815,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2829,7 +2829,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2894,7 +2894,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2908,7 +2908,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2973,7 +2973,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -2987,7 +2987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3052,7 +3052,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3066,7 +3066,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3135,7 +3135,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3149,7 +3149,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3214,7 +3214,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3228,7 +3228,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3297,7 +3297,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3311,7 +3311,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3376,7 +3376,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3390,7 +3390,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3462,7 +3462,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3476,7 +3476,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3540,7 +3540,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3554,7 +3554,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3621,7 +3621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3635,7 +3635,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3698,7 +3698,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3712,7 +3712,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3775,7 +3775,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3789,7 +3789,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3856,7 +3856,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Price:</label>
 												<?php
 												$sql = "SELECT * FROM price";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3870,7 +3870,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 												<label>Payment:</label>
 												<?php
 												$sql = "SELECT * FROM payment";
-												$query = $dbh->prepare($sql);
+												$query = $conn->prepare($sql);
 												$query->execute();
 												$results = $query->fetchAll(PDO::FETCH_ASSOC);
 												?>
@@ -3934,7 +3934,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -3948,7 +3948,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4006,7 +4006,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4020,7 +4020,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4078,7 +4078,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4092,7 +4092,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4153,7 +4153,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4167,7 +4167,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4224,7 +4224,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4238,7 +4238,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4296,7 +4296,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4310,7 +4310,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4368,7 +4368,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4382,7 +4382,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4440,7 +4440,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4454,7 +4454,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4512,7 +4512,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4526,7 +4526,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4587,7 +4587,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4601,7 +4601,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4658,7 +4658,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4672,7 +4672,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4730,7 +4730,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4744,7 +4744,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4802,7 +4802,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4816,7 +4816,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4874,7 +4874,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4888,7 +4888,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4946,7 +4946,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -4960,7 +4960,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5021,7 +5021,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5035,7 +5035,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5092,7 +5092,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5106,7 +5106,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5163,7 +5163,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5177,7 +5177,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -5243,7 +5243,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5257,7 +5257,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5315,7 +5315,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5329,7 +5329,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5387,7 +5387,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5401,7 +5401,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5459,7 +5459,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5473,7 +5473,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5531,7 +5531,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5545,7 +5545,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5603,7 +5603,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5617,7 +5617,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5679,7 +5679,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5693,7 +5693,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5751,7 +5751,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5765,7 +5765,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5823,7 +5823,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5837,7 +5837,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5895,7 +5895,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5909,7 +5909,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5967,7 +5967,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -5981,7 +5981,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6039,7 +6039,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6053,7 +6053,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6115,7 +6115,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6129,7 +6129,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6187,7 +6187,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6201,7 +6201,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6259,7 +6259,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6273,7 +6273,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6331,7 +6331,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6345,7 +6345,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6403,7 +6403,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6417,7 +6417,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6475,7 +6475,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6489,7 +6489,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6551,7 +6551,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6565,7 +6565,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6623,7 +6623,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6637,7 +6637,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6695,7 +6695,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6709,7 +6709,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6767,7 +6767,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6781,7 +6781,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6839,7 +6839,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6853,7 +6853,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6911,7 +6911,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6925,7 +6925,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -6987,7 +6987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7001,7 +7001,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7059,7 +7059,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7073,7 +7073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7131,7 +7131,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7145,7 +7145,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7203,7 +7203,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7217,7 +7217,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7275,7 +7275,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7289,7 +7289,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7347,7 +7347,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7361,7 +7361,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7423,7 +7423,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7437,7 +7437,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7495,7 +7495,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7509,7 +7509,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7567,7 +7567,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7581,7 +7581,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7639,7 +7639,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7653,7 +7653,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7711,7 +7711,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7725,7 +7725,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7783,7 +7783,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7797,7 +7797,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7859,7 +7859,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7873,7 +7873,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7931,7 +7931,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -7945,7 +7945,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8003,7 +8003,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8017,7 +8017,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8075,7 +8075,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8089,7 +8089,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8147,7 +8147,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8161,7 +8161,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8219,7 +8219,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8233,7 +8233,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8295,7 +8295,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8309,7 +8309,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8367,7 +8367,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8381,7 +8381,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8439,7 +8439,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8453,7 +8453,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8511,7 +8511,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8525,7 +8525,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8583,7 +8583,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8597,7 +8597,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8655,7 +8655,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8669,7 +8669,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8735,7 +8735,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8749,7 +8749,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8807,7 +8807,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8821,7 +8821,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8879,7 +8879,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8893,7 +8893,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8951,7 +8951,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -8965,7 +8965,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9023,7 +9023,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9037,7 +9037,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9095,7 +9095,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9109,7 +9109,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9171,7 +9171,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9185,7 +9185,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9243,7 +9243,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9257,7 +9257,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9315,7 +9315,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9329,7 +9329,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9387,7 +9387,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9401,7 +9401,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9459,7 +9459,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9473,7 +9473,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9531,7 +9531,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9545,7 +9545,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9607,7 +9607,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9621,7 +9621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9679,7 +9679,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9693,7 +9693,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9751,7 +9751,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9765,7 +9765,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9823,7 +9823,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9837,7 +9837,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9895,7 +9895,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9909,7 +9909,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9967,7 +9967,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -9981,7 +9981,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10043,7 +10043,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10057,7 +10057,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10115,7 +10115,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10129,7 +10129,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10187,7 +10187,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10201,7 +10201,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10259,7 +10259,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10273,7 +10273,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10331,7 +10331,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10345,7 +10345,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10403,7 +10403,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10417,7 +10417,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10479,7 +10479,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10493,7 +10493,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10551,7 +10551,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10565,7 +10565,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10623,7 +10623,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10637,7 +10637,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10695,7 +10695,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10709,7 +10709,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10767,7 +10767,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10781,7 +10781,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10839,7 +10839,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10853,7 +10853,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10915,7 +10915,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10929,7 +10929,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -10987,7 +10987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11001,7 +11001,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11059,7 +11059,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11073,7 +11073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11131,7 +11131,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11145,7 +11145,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11203,7 +11203,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11217,7 +11217,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11275,7 +11275,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11289,7 +11289,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11351,7 +11351,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11365,7 +11365,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11423,7 +11423,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11437,7 +11437,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11495,7 +11495,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11509,7 +11509,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11567,7 +11567,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11581,7 +11581,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11639,7 +11639,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11653,7 +11653,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11711,7 +11711,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11725,7 +11725,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11787,7 +11787,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11801,7 +11801,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11859,7 +11859,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11873,7 +11873,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11931,7 +11931,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -11945,7 +11945,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12003,7 +12003,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12017,7 +12017,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12075,7 +12075,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12089,7 +12089,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12147,7 +12147,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12161,7 +12161,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12227,7 +12227,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12241,7 +12241,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12299,7 +12299,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12313,7 +12313,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12371,7 +12371,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12385,7 +12385,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12443,7 +12443,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12457,7 +12457,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12515,7 +12515,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12529,7 +12529,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12587,7 +12587,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12601,7 +12601,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12663,7 +12663,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12677,7 +12677,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12735,7 +12735,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12749,7 +12749,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12807,7 +12807,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12821,7 +12821,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12879,7 +12879,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12893,7 +12893,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12951,7 +12951,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -12965,7 +12965,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13023,7 +13023,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13037,7 +13037,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13099,7 +13099,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13113,7 +13113,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13171,7 +13171,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13185,7 +13185,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13243,7 +13243,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13257,7 +13257,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13315,7 +13315,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13329,7 +13329,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13387,7 +13387,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13401,7 +13401,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13459,7 +13459,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13473,7 +13473,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13535,7 +13535,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13549,7 +13549,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13607,7 +13607,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13621,7 +13621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13679,7 +13679,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13693,7 +13693,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13751,7 +13751,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13765,7 +13765,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13823,7 +13823,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13837,7 +13837,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13895,7 +13895,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13909,7 +13909,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13971,7 +13971,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -13985,7 +13985,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14043,7 +14043,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14057,7 +14057,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14115,7 +14115,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14129,7 +14129,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14187,7 +14187,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14201,7 +14201,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14259,7 +14259,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14273,7 +14273,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14331,7 +14331,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14345,7 +14345,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14407,7 +14407,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14421,7 +14421,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14479,7 +14479,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14493,7 +14493,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14551,7 +14551,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14565,7 +14565,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14623,7 +14623,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14637,7 +14637,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14695,7 +14695,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14709,7 +14709,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14767,7 +14767,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14781,7 +14781,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14843,7 +14843,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14857,7 +14857,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14915,7 +14915,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14929,7 +14929,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -14987,7 +14987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15001,7 +15001,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15059,7 +15059,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15073,7 +15073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15131,7 +15131,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15145,7 +15145,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15203,7 +15203,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15217,7 +15217,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15279,7 +15279,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15293,7 +15293,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15351,7 +15351,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15365,7 +15365,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15423,7 +15423,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15437,7 +15437,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15495,7 +15495,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15509,7 +15509,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15567,7 +15567,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15581,7 +15581,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15639,7 +15639,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15653,7 +15653,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15719,7 +15719,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15733,7 +15733,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15791,7 +15791,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15805,7 +15805,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15863,7 +15863,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15877,7 +15877,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15935,7 +15935,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -15949,7 +15949,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16007,7 +16007,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16021,7 +16021,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16079,7 +16079,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16093,7 +16093,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16155,7 +16155,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16169,7 +16169,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16227,7 +16227,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16241,7 +16241,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16299,7 +16299,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16313,7 +16313,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16371,7 +16371,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16385,7 +16385,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16443,7 +16443,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16457,7 +16457,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16515,7 +16515,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16529,7 +16529,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16591,7 +16591,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16605,7 +16605,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16663,7 +16663,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16677,7 +16677,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16735,7 +16735,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16749,7 +16749,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16807,7 +16807,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16821,7 +16821,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16879,7 +16879,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16893,7 +16893,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16951,7 +16951,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -16965,7 +16965,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17027,7 +17027,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17041,7 +17041,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17099,7 +17099,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17113,7 +17113,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17171,7 +17171,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17185,7 +17185,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17243,7 +17243,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17257,7 +17257,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17315,7 +17315,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17329,7 +17329,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17387,7 +17387,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17401,7 +17401,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17463,7 +17463,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17477,7 +17477,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17535,7 +17535,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17549,7 +17549,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17607,7 +17607,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17621,7 +17621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17679,7 +17679,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17693,7 +17693,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17751,7 +17751,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17765,7 +17765,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17823,7 +17823,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17837,7 +17837,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17899,7 +17899,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17913,7 +17913,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17971,7 +17971,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -17985,7 +17985,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18043,7 +18043,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18057,7 +18057,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18115,7 +18115,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18129,7 +18129,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18187,7 +18187,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18201,7 +18201,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18259,7 +18259,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18273,7 +18273,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18335,7 +18335,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18349,7 +18349,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18407,7 +18407,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18421,7 +18421,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18479,7 +18479,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18493,7 +18493,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18551,7 +18551,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18565,7 +18565,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18623,7 +18623,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18637,7 +18637,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18695,7 +18695,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18709,7 +18709,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18771,7 +18771,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18785,7 +18785,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18843,7 +18843,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18857,7 +18857,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18915,7 +18915,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18929,7 +18929,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -18987,7 +18987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19001,7 +19001,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19059,7 +19059,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19073,7 +19073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19131,7 +19131,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19145,7 +19145,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19211,7 +19211,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19225,7 +19225,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19283,7 +19283,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19297,7 +19297,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19355,7 +19355,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19369,7 +19369,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19427,7 +19427,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19441,7 +19441,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19499,7 +19499,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19513,7 +19513,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19571,7 +19571,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19585,7 +19585,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19647,7 +19647,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19661,7 +19661,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19719,7 +19719,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19733,7 +19733,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19791,7 +19791,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19805,7 +19805,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19863,7 +19863,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19877,7 +19877,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19935,7 +19935,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -19949,7 +19949,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20007,7 +20007,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20021,7 +20021,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20083,7 +20083,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20097,7 +20097,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20155,7 +20155,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20169,7 +20169,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20227,7 +20227,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20241,7 +20241,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20299,7 +20299,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20313,7 +20313,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20371,7 +20371,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20385,7 +20385,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20443,7 +20443,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20457,7 +20457,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20519,7 +20519,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20533,7 +20533,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20591,7 +20591,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20605,7 +20605,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20663,7 +20663,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20677,7 +20677,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20735,7 +20735,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20749,7 +20749,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20807,7 +20807,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20821,7 +20821,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20879,7 +20879,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20893,7 +20893,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20955,7 +20955,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -20969,7 +20969,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21027,7 +21027,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21041,7 +21041,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21099,7 +21099,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21113,7 +21113,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21171,7 +21171,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21185,7 +21185,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21243,7 +21243,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21257,7 +21257,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21315,7 +21315,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21329,7 +21329,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21391,7 +21391,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21405,7 +21405,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21463,7 +21463,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21477,7 +21477,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21535,7 +21535,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21549,7 +21549,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21607,7 +21607,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21621,7 +21621,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21679,7 +21679,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21693,7 +21693,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21751,7 +21751,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21765,7 +21765,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21827,7 +21827,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21841,7 +21841,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21899,7 +21899,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21913,7 +21913,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21971,7 +21971,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -21985,7 +21985,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22043,7 +22043,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22057,7 +22057,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22115,7 +22115,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22129,7 +22129,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22187,7 +22187,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22201,7 +22201,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22263,7 +22263,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22277,7 +22277,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22335,7 +22335,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22349,7 +22349,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22407,7 +22407,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22421,7 +22421,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22479,7 +22479,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22493,7 +22493,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22551,7 +22551,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22565,7 +22565,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22623,7 +22623,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22637,7 +22637,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22699,7 +22699,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22713,7 +22713,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22771,7 +22771,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22785,7 +22785,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22843,7 +22843,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22857,7 +22857,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22915,7 +22915,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22929,7 +22929,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -22987,7 +22987,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23001,7 +23001,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23059,7 +23059,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23073,7 +23073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23135,7 +23135,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23149,7 +23149,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23207,7 +23207,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23221,7 +23221,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23279,7 +23279,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23293,7 +23293,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23351,7 +23351,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23365,7 +23365,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23423,7 +23423,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23437,7 +23437,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23495,7 +23495,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Price:</label>
 														<?php
 														$sql = "SELECT * FROM price";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23509,7 +23509,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 														<label>Payment:</label>
 														<?php
 														$sql = "SELECT * FROM payment";
-														$query = $dbh->prepare($sql);
+														$query = $conn->prepare($sql);
 														$query->execute();
 														$results = $query->fetchAll(PDO::FETCH_ASSOC);
 														?>
@@ -23575,7 +23575,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23589,7 +23589,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23647,7 +23647,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23661,7 +23661,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23719,7 +23719,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23733,7 +23733,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23791,7 +23791,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23805,7 +23805,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23866,7 +23866,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23880,7 +23880,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23937,7 +23937,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -23951,7 +23951,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24007,7 +24007,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24021,7 +24021,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24073,7 +24073,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24087,7 +24087,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24139,7 +24139,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24153,7 +24153,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24209,7 +24209,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24223,7 +24223,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24275,7 +24275,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24289,7 +24289,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24341,7 +24341,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24355,7 +24355,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24407,7 +24407,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Price:</label>
 										<?php
 										$sql = "SELECT * FROM price";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24421,7 +24421,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 										<label>Payment:</label>
 										<?php
 										$sql = "SELECT * FROM payment";
-										$query = $dbh->prepare($sql);
+										$query = $conn->prepare($sql);
 										$query->execute();
 										$results = $query->fetchAll(PDO::FETCH_ASSOC);
 										?>
@@ -24492,7 +24492,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 							<div class="form-group">
 								<?php
 								$sql = "SELECT * FROM menu";
-								$query = $dbh->prepare($sql);
+								$query = $conn->prepare($sql);
 								$query->execute();
 								$results = $query->fetchAll(PDO::FETCH_ASSOC);
 								?>

@@ -15,7 +15,7 @@ require("head.php");
 				<td>End time</td>
 			</tr>
 			<?php
-			$res = $dbh->prepare("SELECT * FROM activities");
+			$res = $conn->prepare("SELECT * FROM activities");
 			$res->fetch(PDO::FETCH_OBJ);
 			$res->execute();
 			foreach ($res as $row) {

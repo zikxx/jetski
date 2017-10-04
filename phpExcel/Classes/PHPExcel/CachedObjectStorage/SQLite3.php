@@ -39,7 +39,7 @@ class PHPExcel_CachedObjectStorage_SQLite3 extends PHPExcel_CachedObjectStorage_
      *
      * @var resource
      */
-    private $DBHandle = null;
+    private $connandle = null;
 
     /**
      * Prepared statement for a SQLite3 select query

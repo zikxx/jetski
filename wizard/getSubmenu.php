@@ -1,7 +1,7 @@
 <?php
 require_once("../dbconfig.php");
 $sql = "SELECT * FROM submenu where menu_id= '" . $_POST["id"] . "'";
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>

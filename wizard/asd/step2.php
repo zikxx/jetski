@@ -11,7 +11,7 @@ if (!isset ($_SESSION ['id'])) {
 	<label><input type="checkbox" ng-model="member"> Member</label>
 	<?php
 	$sql = "SELECT * FROM members ORDER BY first_name";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC); ?>
 	<select ng-show="member" name="menu" class="form-control">
@@ -20,7 +20,7 @@ if (!isset ($_SESSION ['id'])) {
 	</select><br><br>
 	<?php
 	$sql = "SELECT * FROM drivers_shippers ORDER BY id";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>

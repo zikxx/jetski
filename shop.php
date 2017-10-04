@@ -13,7 +13,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO shop(comment, price, date, shop_other)
+	$stmt = $conn->prepare("INSERT INTO shop(comment, price, date, shop_other)
 	VALUES (:comment, :price, :date, :shop_other)");
 	$stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
 	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
@@ -25,7 +25,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 }
 header("Location:index.php");

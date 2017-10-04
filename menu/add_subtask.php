@@ -11,7 +11,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO subtask(subtask_name, submenu_id)
+	$stmt = $conn->prepare("INSERT INTO subtask(subtask_name, submenu_id)
 	VALUES (:subtask_name, :submenu_id)");
 	$stmt->bindParam(':subtask_name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':submenu_id', $submenu, PDO::PARAM_STR);
@@ -22,7 +22,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }

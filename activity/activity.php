@@ -1,8 +1,8 @@
 <?php
 include("head.php");
 $sql = "SELECT * FROM menu";
-$query = $dbh->prepare($sql);
-$query->execute();
+$query = $conn->prepare($sql);
+	$query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <div class="container-fluid">

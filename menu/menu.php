@@ -25,7 +25,7 @@ include("head.php");
 			<label>Select parent menu:</label>
 			<?php
 			$sql = "SELECT * FROM menu";
-			$query = $dbh->prepare($sql);
+			$query = $conn->prepare($sql);
 			$query->execute();
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>
@@ -54,7 +54,7 @@ include("head.php");
 			<label>Select parent submenu:</label>
 			<?php
 			$sql = "SELECT * FROM submenu";
-			$query = $dbh->prepare($sql);
+			$query = $conn->prepare($sql);
 			$query->execute();
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>

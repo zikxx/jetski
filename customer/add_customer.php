@@ -14,7 +14,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO customers(name, phone, agreement_no, other, reg_date)
+	$stmt = $conn->prepare("INSERT INTO customers(name, phone, agreement_no, other, reg_date)
 	VALUES (:name, :phone, :agreement_no, :other, :reg_date)");
 	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
@@ -27,7 +27,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 }
 header("Location:customer.php");

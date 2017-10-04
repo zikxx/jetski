@@ -3,7 +3,7 @@
 	<label>Price:</label>
 	<?php
 	$sql = "SELECT * FROM price";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>
@@ -17,7 +17,7 @@
 	<label>Payment:</label>
 	<?php
 	$sql = "SELECT * FROM payment";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>

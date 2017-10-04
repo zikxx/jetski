@@ -39,7 +39,7 @@ class PHPExcel_CachedObjectStorage_SQLite extends PHPExcel_CachedObjectStorage_C
      *
      * @var resource
      */
-    private $DBHandle = null;
+    private $connandle = null;
 
     /**
      * Store cell data in cache for the current cell object if it's "dirty",

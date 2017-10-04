@@ -5,7 +5,7 @@ include("head.php");
 	<h2>Update driver</h2>
 	<br>
 	<?php
-	$stmt = $dbh->prepare("SELECT * FROM drivers_shippers WHERE id=:id");
+	$stmt = $conn->prepare("SELECT * FROM drivers_shippers WHERE id=:id");
 	$stmt->bindParam(':id', $_GET ['q'], PDO::PARAM_INT);
 	$stmt->execute();
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -12,7 +12,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO inventory(type, registration, other)
+	$stmt = $conn->prepare("INSERT INTO inventory(type, registration, other)
 	VALUES (:type, :registration, :other)");
 	$stmt->bindParam(':type', $type, PDO::PARAM_STR);
 	$stmt->bindParam(':registration', $registration, PDO::PARAM_STR);
@@ -23,7 +23,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 }
 header("Location:inventory.php");

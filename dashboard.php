@@ -2,7 +2,7 @@
 <div class="col-md-offset-2 col-md-8" id="dashboard">
 	<?php
 	$sql = "SELECT * FROM activities";
-	$query = $dbh->prepare($sql);
+	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>

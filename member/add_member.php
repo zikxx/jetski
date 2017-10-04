@@ -27,7 +27,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO members(first_name, last_name, phone, size, gender, shoe_size ,weight, age, status,
+	$stmt = $conn->prepare("INSERT INTO members(first_name, last_name, phone, size, gender, shoe_size ,weight, age, status,
 	emergency_contact, address, email, storage_1, storage_2, storage_3, other, prepaid, reg_date)
 	VALUES (:first_name, :last_name, :phone, :size, :gender, :shoe_size, :weight, :age, :status, :emergency_contact, 
 	:address, :email, :storage_1, :storage_2, :storage_3, :other, :prepaid, :reg_date)");
@@ -55,7 +55,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 }
 header("Location:member.php");

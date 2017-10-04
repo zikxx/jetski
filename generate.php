@@ -18,7 +18,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Centurion%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Centurion%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -60,7 +60,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Mastercraft%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Mastercraft%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -102,7 +102,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Othello 150HP%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Othello 150HP%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -144,7 +144,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Othello 200HP%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where subtask like 'Wakeboard - Othello 200HP%' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -186,7 +186,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where name='Windsurfing' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where name='Windsurfing' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -228,7 +228,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where name='Fishing boat' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where name='Fishing boat' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -270,7 +270,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where name='Yacht' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
+		$res = $conn->prepare("SELECT * FROM activities where name='Yacht' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -311,7 +311,7 @@ include("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $dbh->prepare("SELECT * FROM activities where subtask NOT like 'Wakeboard - Centurion%' and subtask NOT like 'Wakeboard - Mastercraft%'
+		$res = $conn->prepare("SELECT * FROM activities where subtask NOT like 'Wakeboard - Centurion%' and subtask NOT like 'Wakeboard - Mastercraft%'
 	and subtask NOT like 'Wakeboard - Othello%' and not name='Windsurfing' and 
 			not name='Yacht' and not name='Fishing boat' and start like '" . date("Y-m-d") . "%' ORDER BY start ASC");
 		$res->fetch(PDO::FETCH_OBJ);

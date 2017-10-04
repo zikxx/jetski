@@ -11,7 +11,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $dbh->prepare("INSERT INTO submenu(submenu_name, menu_id)
+	$stmt = $conn->prepare("INSERT INTO submenu(submenu_name, menu_id)
 	VALUES (:submenu_name, :menu_id)");
 	$stmt->bindParam(':submenu_name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':menu_id', $menu, PDO::PARAM_STR);
@@ -22,7 +22,7 @@ try {
 	/**
 	 * * close the database connection **
 	 */
-	$dbh = null;
+	$conn = null;
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }

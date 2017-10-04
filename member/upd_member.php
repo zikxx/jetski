@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("dbconfig.php");
-$stmt = $dbh->prepare("UPDATE members SET first_name=:first_name, phone=:phone, size=:size, gender=:gender, shoe_size=:shoe_size, other=:other 
+$stmt = $conn->prepare("UPDATE members SET first_name=:first_name, phone=:phone, size=:size, gender=:gender, shoe_size=:shoe_size, other=:other
 		WHERE id=:id");
 $stmt->bindParam(':id', $_POST ['id'], PDO::PARAM_INT);
 $stmt->bindParam(':first_name', $_POST ['first_name'], PDO::PARAM_INT);

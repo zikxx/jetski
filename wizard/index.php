@@ -1,7 +1,7 @@
 <?php
 require_once("../head.php");
 $sql = "SELECT * FROM menu";
-$query = $dbh->prepare($sql);
+$query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
