@@ -9,6 +9,7 @@
 			<?php
 			if ((isset ($_SESSION ['id'])) && ($_SESSION ['user'] == "admin")) {
 				?>
+				<li><a href="menu.php">Menu</a></li>
 				<li><a href="driver.php">Drivers</a></li>
 				<li><a href="inventory.php">Inventories</a></li>
 				<li><a href="generate.php">Export</a></li><?php } ?>

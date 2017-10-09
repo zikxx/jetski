@@ -1,7 +1,7 @@
 <?php
 include("head.php");
 ?>
-<div class="col-md-4" style="text-align: center;">
+<div class="col-md-3" style="text-align: center;">
 	<h2>Add menu</h2>
 	<form method="POST" action="add_menu.php">
 		<input type="hidden" name="id">
@@ -13,7 +13,7 @@ include("head.php");
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
-<div class="col-md-4" style="text-align: center;">
+<div class="col-md-3" style="text-align: center;">
 	<h2>Add submenu</h2>
 	<form method="POST" action="add_submenu.php">
 		<input type="hidden" name="id">
@@ -42,30 +42,71 @@ include("head.php");
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
-<div class="col-md-4" style="text-align: center;">
-	<h2>Add submenu</h2>
+<div class="col-md-3" style="text-align: center;">
+	<h2>Add subtask</h2>
 	<form method="POST" action="add_subtask.php">
-		<input type="hidden" name="id">
 		<div class="form-group">
 			<label>Name:</label><input type="text" class="form-control"
 									   name="name">
 		</div>
 		<div class="form-group">
-			<label>Select parent submenu:</label>
-			<?php
-			$sql = "SELECT * FROM submenu";
-			$query = $conn->prepare($sql);
-			$query->execute();
-			$results = $query->fetchAll(PDO::FETCH_ASSOC);
-			?>
-			<select name="submenu" class="form-control">
-				<?php foreach ($results as $row) { ?>
-					<option value="<?php echo $row['id']; ?>"><?php echo $row['submenu_name']; ?></option> <?php } ?>
+			<label>Activity:</label><br>
+			<select name="name" id="activity" class="form-control" onChange="getSubmenu(this.value);">
+				<option value=""></option>
+				<?php
+				foreach ($results as $menu) {
+					?>
+					<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menu_name"]; ?></option>
+				<?php } ?>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Submenu:</label><br/>
+			<select name="submenu" id="submenu" class="form-control" onChange="getSubtask(this.value);">
+				<option value=""></option>
 			</select>
 		</div>
 		<div class="form-group">
 			<label>Price:</label><input type="text" class="form-control"
-										name="price">
+										name="name">
+		</div>
+		<a href="index.php" class="btn btn-default">Cancel</a>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+<div class="col-md-3" style="text-align: center;">
+	<h2>Add inflatable</h2>
+	<form method="POST" action="add_subtask.php">
+		<div class="form-group">
+			<label>Name:</label><input type="text" class="form-control"
+									   name="name">
+		</div>
+		<div class="form-group">
+			<label>Activity:</label><br>
+			<select name="name" id="activity" class="form-control" onChange="getSubmenu(this.value);">
+				<option value=""></option>
+				<?php
+				foreach ($results as $menu) {
+					?>
+					<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menu_name"]; ?></option>
+				<?php } ?>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Submenu:</label><br/>
+			<select name="submenu" id="submenu" class="form-control" onChange="getSubtask(this.value);">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Subtask:</label><br/>
+			<select name="subtask" id="subtask" class="form-control" onChange="getInflatable(this.value);">
+				<option value=""></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Price:</label><input type="text" class="form-control"
+										name="name">
 		</div>
 		<a href="index.php" class="btn btn-default">Cancel</a>
 		<button type="submit" class="btn btn-primary">Submit</button>

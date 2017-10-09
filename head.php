@@ -8,7 +8,7 @@ if (! isset ( $_SESSION ['id'] )) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,24 +18,12 @@ if (! isset ( $_SESSION ['id'] )) {
 <link rel="shortcut icon" href="pics/index.ico">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/default.css">
-<script src="js/angular.min.js"
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+<script type="text/javascript" src="js/angular.min.js"
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/default.js"></script>
-<style>
-#load {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: 9999;
-	background: url("pics/loading.gif") no-repeat center center
-		rgba(36, 51, 66, 1);
-}
-
-body {
-	background-color: rgba(36, 51, 66, 1);
-}
-</style>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
 </head>
 <body>
 	<div id="load"></div>

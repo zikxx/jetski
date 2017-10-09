@@ -3,7 +3,7 @@ include("head.php");
 $name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
 $submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
 ?>
-<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+<div class="col-md-offset-2 col-md-8 pages">
 	<h2>Add new activity</h2>
 	<br>
 	<form method="POST" action="add_activity.php">

@@ -1,7 +1,7 @@
 <?php
 include("head.php");
 ?>
-<div class="col-md-offset-1 col-md-10" style="text-align: center;">
+<div class="col-md-offset-1 col-md-10 pages">
 	<h3>Add new member:</h3>
 	<br>
 	<form method="POST" action="add_member.php">

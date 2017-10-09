@@ -1,8 +1,19 @@
 <?php
 include("head.php");
 ?>
+<form action=generate_daily.php method="POST">
+	<div class="col-md-offset-4 col-md-4" style="color:white;">
+		<label>Export data for date:</label>
+		<div class="input-group date form_datetime" data-link-field="dtp_input1">
+			<input name="start" class="form-control" type="text" value="" readonly>
+			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+			<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-info">Submit</button>
+	</div>
+</form>
 <div class="col-md-12" style="text-align: center;">
-	<a href='generate_daily.php' type="submit" class="btn btn-primary">Export data</a>
 	<h2 style="text-align: center; color: white;">Centurion</h2>
 	<table class="table" style="text-align: center; color: white;">
 		<tr style="font-weight: bold;">
@@ -342,28 +353,17 @@ include("head.php");
 </div>
 </div>
 </body>
-<script type="text/javascript"
-		src="datepickr-master/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
-<script type="text/javascript"
-		src="datepickr-master/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript"
-		src="datepickr-master/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript"
-		src="datepickr-master/js/locales/bootstrap-datetimepicker.fr.js"
-		charset="UTF-8"></script>
 <script type="text/javascript">
     $('.form_datetime').datetimepicker({
-        //language:  'fr',
         weekStart: 1,
         autoclose: 1,
         todayHighlight: 1,
         startView: 2,
         forceParse: 0,
-        todayHighlight: true,
         format: 'yyyy-mm-dd',
         pickerPosition: 'bottom-left',
-        daysOfWeekDisabled: [0],
-        startDate: '+0d',
+        todayBtn:  1,
+        minView: 2
     });
 </script>
 </html>

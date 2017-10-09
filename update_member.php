@@ -1,7 +1,7 @@
 <?php
 include("head.php");
 ?>
-<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+<div class="col-md-offset-2 col-md-8 pages">
 	<h2>Update member</h2>
 	<br>
 	<?php

@@ -7,9 +7,9 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 	<option value=""></option>
 <?php
-foreach ($results as $state) {
+foreach ($results as $submenu) {
 	?>
-	<option value="<?php echo $state["id"]; ?>"><?php echo $state["submenu_name"]; ?></option>
+	<option value="<?php echo $submenu["id"]; ?>"><?php echo $submenu["submenu_name"]; ?></option>
 	<?php
 }
 ?>

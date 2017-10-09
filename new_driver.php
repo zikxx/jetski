@@ -1,7 +1,7 @@
 <?php
 include("head.php");
 ?>
-<div class="col-md-offset-2 col-md-8" style="text-align: center;">
+<div class="col-md-offset-2 col-md-8 pages">
 	<h2>Add new driver</h2>
 	<br>
 	<form method="POST" action="add_driver.php">

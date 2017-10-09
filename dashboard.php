@@ -1,5 +1,5 @@
 <?php require("head.php") ?>
-<div class="col-md-offset-2 col-md-8" id="dashboard">
+<div class="col-md-offset-2 col-md-8 pages" id="dashboard">
 	<?php
 	$sql = "SELECT * FROM activities";
 	$query = $conn->prepare($sql);

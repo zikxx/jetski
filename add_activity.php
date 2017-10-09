@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../dbconfig.php");
+require_once("dbconfig.php");
 $name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
 $submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
 $subtask = filter_var($_POST ['subtask'], FILTER_SANITIZE_STRING);
@@ -19,7 +19,7 @@ try {
 	/**
 	 * * echo a message saying we have connected **
 	 */
-	echo 'Connected to database';
+
 	/**
 	 * * INSERT data **
 	 */
@@ -49,6 +49,7 @@ last_name,driver,price,payment,paid_price,start,paid,status)
 	echo $e->getMessage();
 }
 $conn = null;
-header('../index_db.php');
+echo ("Activity created!");
+header('refresh:1;activity.php');
 die();
 ?>

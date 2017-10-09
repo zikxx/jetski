@@ -36,7 +36,7 @@ function getSubtask(val) {
 function getInflatable(val) {
     $.ajax({
         type: "POST",
-        url: "wizard/getInflatable.php",
+        url: "wizard/getInflatables.php",
         data: 'id=' + val,
         success: function (data) {
             $("#inflatables").html(data);
@@ -48,12 +48,15 @@ $(document).ready(function () {
     $("#member").click(function () {
         $("#member_form").show();
         $("#customer_form").hide();
+        $("#first_name").val("");
+        $("#last_name").val("");
     });
     $("#customer").click(function () {
         $("#member_form").hide();
         $("#customer_form").show();
+        $("#member_select").prop('selectedIndex', 0);
     });
     $("#driver").click(function () {
-        $("#driver_select").toggle();
+        $("#driver_select").toggle().prop('selectedIndex', 0);
     });
 });

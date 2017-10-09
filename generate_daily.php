@@ -3,6 +3,7 @@ require("head.php");
 /**
  * Error reporting
  */
+$start = filter_var($_POST ['start'], FILTER_SANITIZE_STRING);
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
@@ -43,7 +44,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A1', 'Centurion')->setCellValue('A2', 'Start Time')->setCellValue('B2', 'Finish Time')->setCellValue('C2', 'Surname')->setCellValue('D2', 'Name')->setCellValue('E2', 'Instructor')->setCellValue('F2', 'Payment')->setCellValue('G2', 'Activity')->setCellValue('H2', 'Type')->setCellValue('I2', 'Equipment')->setCellValue('J2', 'Gender')->setCellValue('K2', 'Age')->setCellValue('L2', 'Weight')->setCellValue('M2', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.subtask like 'Wakeboard - Centurion%' and a.start like '" . date("Y-m-d") . "%'");
+where a.subtask like 'Wakeboard - Centurion%' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results1 = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -52,7 +53,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A50', 'Mastercraft')->setCellValue('A51', 'Start Time')->setCellValue('B51', 'Finish Time')->setCellValue('C51', 'Surname')->setCellValue('D51', 'Name')->setCellValue('E51', 'Instructor')->setCellValue('F51', 'Payment')->setCellValue('G51', 'Activity')->setCellValue('H51', 'Type')->setCellValue('I51', 'Equipment')->setCellValue('J51', 'Gender')->setCellValue('K51', 'Age')->setCellValue('L51', 'Weight')->setCellValue('M51', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.subtask like 'Wakeboard - Mastercraft%' and a.start like '" . date("Y-m-d") . "%'");
+where a.subtask like 'Wakeboard - Mastercraft%' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -61,7 +62,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A100', 'Othelo 150HP')->setCellValue('A101', 'Start Time')->setCellValue('B101', 'Finish Time')->setCellValue('C101', 'Surname')->setCellValue('D101', 'Name')->setCellValue('E101', 'Instructor')->setCellValue('F101', 'Payment')->setCellValue('G101', 'Activity')->setCellValue('H101', 'Type')->setCellValue('I101', 'Equipment')->setCellValue('J101', 'Gender')->setCellValue('K101', 'Age')->setCellValue('L101', 'Weight')->setCellValue('M101', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.subtask like 'Wakeboard - Othello 150HP%' and a.start like '" . date("Y-m-d") . "%'");
+where a.subtask like 'Wakeboard - Othello 150HP%' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -70,7 +71,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A150', 'Othelo 200HP')->setCellValue('A151', 'Start Time')->setCellValue('B151', 'Finish Time')->setCellValue('C151', 'Surname')->setCellValue('D151', 'Name')->setCellValue('E151', 'Instructor')->setCellValue('F151', 'Payment')->setCellValue('G151', 'Activity')->setCellValue('H151', 'Type')->setCellValue('I151', 'Equipment')->setCellValue('J151', 'Gender')->setCellValue('K151', 'Age')->setCellValue('L151', 'Weight')->setCellValue('M151', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.subtask like 'Wakeboard - Othello 200HP%' and a.start like '" . date("Y-m-d") . "%'");
+where a.subtask like 'Wakeboard - Othello 200HP%' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -79,7 +80,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A200', 'Windsurfing')->setCellValue('A201', 'Start Time')->setCellValue('B201', 'Finish Time')->setCellValue('C201', 'Surname')->setCellValue('D201', 'Name')->setCellValue('E201', 'Instructor')->setCellValue('F201', 'Payment')->setCellValue('G201', 'Activity')->setCellValue('H201', 'Type')->setCellValue('I201', 'Equipment')->setCellValue('J201', 'Gender')->setCellValue('K201', 'Age')->setCellValue('L201', 'Weight')->setCellValue('M201', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.subtask like '%Windsurfing%' and a.start like '" . date("Y-m-d") . "%'");
+where a.subtask like '%Windsurfing%' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -88,7 +89,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A250', 'Fishing boat')->setCellValue('A251', 'Start Time')->setCellValue('B251', 'Finish Time')->setCellValue('C251', 'Surname')->setCellValue('D251', 'Name')->setCellValue('E251', 'Instructor')->setCellValue('F251', 'Payment')->setCellValue('G251', 'Activity')->setCellValue('H251', 'Type')->setCellValue('I251', 'Equipment')->setCellValue('J251', 'Gender')->setCellValue('K251', 'Age')->setCellValue('L251', 'Weight')->setCellValue('M251', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.name='Fishing boat'  and a.start like '" . date("Y-m-d") . "%'");
+where a.name='Fishing boat'  and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -97,7 +98,7 @@ $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A300', 'Yacht')->setCellValue('A301', 'Start Time')->setCellValue('B301', 'Finish Time')->setCellValue('C301', 'Surname')->setCellValue('D301', 'Name')->setCellValue('E301', 'Instructor')->setCellValue('F301', 'Payment')->setCellValue('G301', 'Activity')->setCellValue('H301', 'Type')->setCellValue('I301', 'Equipment')->setCellValue('J301', 'Gender')->setCellValue('K301', 'Age')->setCellValue('L301', 'Weight')->setCellValue('M301', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, a.name, a.submenu, m.storage_1, m.gender, m.age, m.weight, m.shoe_size
 FROM activities a inner join members m on a.last_name = m.last_name
-where a.name='Yacht'  and a.start like '" . date("Y-m-d") . "%'");
+where a.name='Yacht'  and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -108,7 +109,7 @@ $sql = ("SELECT a.start, a.end, m.last_name, m.first_name, a.driver, a.payment, 
 FROM activities a inner join members m on a.last_name = m.last_name
 where a.subtask NOT like 'Wakeboard - Centurion%' and a.subtask NOT like 'Wakeboard - Mastercraft%'
 	and a.subtask NOT like 'Wakeboard - Othelo%' and not a.name='Windsurfing'
-	and not a.name='Yacht' and not a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%'");
+	and not a.name='Yacht' and not a.name='Fishing boat' and a.start like '" . $start . "%'");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -138,7 +139,7 @@ echo date('H:i:s'), " Clone worksheet", EOL;
 $objPHPExcel->createSheet();
 $sql = ("SELECT m.first_name, m.last_name, m.status, m.phone, m.emergency_contact, m.address, m.email, m.storage_1, m.storage_2, m.storage_3 from activities a
 INNER JOIN members m on a.last_name = m.last_name
-WHERE a.last_name <> '' and a.start like '" . date("Y-m-d") . "%' order by a.start");
+WHERE a.last_name <> '' and a.start like '" . $start . "%' order by a.start");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
