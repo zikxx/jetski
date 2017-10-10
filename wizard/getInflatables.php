@@ -14,4 +14,9 @@ if ($_POST["id"] > 57 && $_POST["id"] < 90) {
 		<?php
 	}
 }
+else {
+	?>
+	<option value=""></option>
+<?php
+}
 ?>
