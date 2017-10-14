@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="790aa653-c120-4703-b7d6-60cae9741826" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_daily.xls" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/generate_daily.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wizard/getInflatables.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/getInflatables.php" afterPath="$PROJECT_DIR$/wizard/getInflatables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizard/getSubtask.php" afterPath="$PROJECT_DIR$/wizard/getSubtask.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activity.php" afterPath="$PROJECT_DIR$/activity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jetski.sql" afterPath="$PROJECT_DIR$/jetski.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/default.js" afterPath="$PROJECT_DIR$/js/default.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,7 +58,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activities" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activities" pinned="false" current-in-tab="false">
         <entry file="das://table:/c9ff3489/ae1a3a9f-b8ee-490f-b312-ca0d56b83eb4/jetski.activities">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -63,17 +67,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+            <state relative-caret-position="458">
+              <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
               <folding>
-                <marker date="1507387109799" expanded="true" signature="40:58" ph="SELECT * FRO... menu" />
-                <marker date="1507387109799" expanded="true" signature="1530:1571" ph="SELECT * FRO... members" />
-                <marker date="1507387109799" expanded="true" signature="2418:2460" ph="SELECT * FRO... drivers_shippers" />
-                <marker date="1507387109799" expanded="true" signature="2949:2968" ph="SELECT * FRO... price" />
-                <marker date="1507387109799" expanded="true" signature="3364:3385" ph="SELECT * FRO... payment" />
+                <marker date="1508008715840" expanded="true" signature="40:58" ph="SELECT * FRO... menu" />
+                <marker date="1508008715840" expanded="true" signature="1345:1386" ph="SELECT * FRO... members" />
+                <marker date="1508008715840" expanded="true" signature="2164:2206" ph="SELECT * FRO... drivers_shippers" />
+                <marker date="1508008715840" expanded="true" signature="2764:2783" ph="SELECT * FRO... price" />
+                <marker date="1508008715840" expanded="true" signature="3179:3200" ph="SELECT * FRO... payment" />
               </folding>
             </state>
           </provider>
@@ -82,8 +86,8 @@
       <file leaf-file-name="default.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/default.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state relative-caret-position="561">
+              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -178,10 +182,10 @@
         <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/pricelist.php" />
         <option value="$PROJECT_DIR$/generate.php" />
-        <option value="$PROJECT_DIR$/activity.php" />
-        <option value="$PROJECT_DIR$/js/default.js" />
         <option value="$PROJECT_DIR$/wizard/getSubtask.php" />
         <option value="$PROJECT_DIR$/wizard/getInflatables.php" />
+        <option value="$PROJECT_DIR$/js/default.js" />
+        <option value="$PROJECT_DIR$/activity.php" />
       </list>
     </option>
   </component>
@@ -199,7 +203,7 @@
   </component>
   <component name="PhpWebServerValidation" deployment_server_id="094f30aa-552e-4387-ae44-6d7320dce0c7" path_to_validation_script="C:\wamp64\" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="133" />
     <option name="width" value="1145" />
     <option name="height" value="514" />
@@ -208,7 +212,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -222,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,8 +243,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="jetski" type="cbb8eebc:String" user="jetski" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,12 +324,13 @@
       <workItem from="1507051595921" duration="14514000" />
       <workItem from="1507135918291" duration="9285000" />
       <workItem from="1507367015217" duration="16558000" />
-      <workItem from="1507666681457" duration="372000" />
+      <workItem from="1507666681457" duration="613000" />
+      <workItem from="1508002357490" duration="822000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100189000" />
+    <option name="totallyTimeSpent" value="101252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -327,19 +342,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20574887" sideWeight="0.49041095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.49041095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27458397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21633889" sideWeight="0.509589" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21633889" sideWeight="0.509589" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -496,6 +511,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <folding>
+            <marker date="1507385397126" expanded="true" signature="91:126" ph="SELECT * FRO... customers" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -624,6 +642,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          <folding>
+            <marker date="1507385685063" expanded="true" signature="105:129" ph="SELECT * FRO... activities" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,6 +662,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-885">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507062180417" expanded="true" signature="437:461" ph="SELECT * FRO... activities" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,6 +673,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1507062176578" expanded="true" signature="77:167" ph="UPDATE activ... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -656,28 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-          <folding>
-            <marker date="1507387109799" expanded="true" signature="40:58" ph="SELECT * FRO... menu" />
-            <marker date="1507387109799" expanded="true" signature="1530:1571" ph="SELECT * FRO... members" />
-            <marker date="1507387109799" expanded="true" signature="2418:2460" ph="SELECT * FRO... drivers_shippers" />
-            <marker date="1507387109799" expanded="true" signature="2949:2968" ph="SELECT * FRO... price" />
-            <marker date="1507387109799" expanded="true" signature="3364:3385" ph="SELECT * FRO... payment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -698,9 +703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <marker date="1507667044006" expanded="true" signature="94:119" ph="SELECT * FRO... inflatables" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,6 +725,28 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="69" column="14" lean-forward="false" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+          <folding>
+            <marker date="1508008715840" expanded="true" signature="40:58" ph="SELECT * FRO... menu" />
+            <marker date="1508008715840" expanded="true" signature="1345:1386" ph="SELECT * FRO... members" />
+            <marker date="1508008715840" expanded="true" signature="2164:2206" ph="SELECT * FRO... drivers_shippers" />
+            <marker date="1508008715840" expanded="true" signature="2764:2783" ph="SELECT * FRO... price" />
+            <marker date="1508008715840" expanded="true" signature="3179:3200" ph="SELECT * FRO... payment" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -30,12 +30,6 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 				<option value=""></option>
 			</select>
 		</div>
-		<div class="form-group">
-			<label>Inflatables:</label><br/>
-			<select name="inflatables" id="inflatables" class="form-control">
-				<option value=""></option>
-			</select>
-		</div>
 		<div class="radio">
 			<label><input type="radio" value="member" id="member" name="type" required> Member</label><br>
 			<label><input type="radio" value="customer" id="customer" name="type" required> Customer</label>
@@ -60,8 +54,6 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<label>Last name:</label><br>
 			<input name="last_name" id="last_name" type="text" value="" class="form-control">
 		</div>
-	</div>
-	<div class="col-md-offset-1 col-md-4" style="color:white;">
 		<div class="form-group">
 			<?php
 			$sql = "SELECT * FROM drivers_shippers ORDER BY id";
@@ -76,6 +68,8 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 					<option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 			</select>
 		</div>
+	</div>
+	<div class="col-md-offset-1 col-md-4" style="color:white;">
 		<div class="form-group">
 			<?php
 			$sql = "SELECT * FROM price";
@@ -113,7 +107,8 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<input name="start" class="form-control" type="text" value="" readonly>
 			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
 			<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-		</div><br>
+		</div>
+		<br>
 		<a href="index.php" class="btn btn-default">Cancel</a>
 		<button type="submit" class="btn btn-info">Submit</button>
 </form>

@@ -33,17 +33,6 @@ function getSubtask(val) {
     });
 }
 
-function getInflatable(val) {
-    $.ajax({
-        type: "POST",
-        url: "wizard/getInflatables.php",
-        data: 'id=' + val,
-        success: function (data) {
-            $("#inflatables").html(data);
-        }
-    });
-}
-
 $(document).ready(function () {
     $("#member").click(function () {
         $("#member_form").show();
