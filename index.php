@@ -283,7 +283,7 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 		</tr>
 		<?php
 		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name activities where a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%' 
+FROM activities a inner join members m on a.last_name = m.last_name where a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%' 
 			ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();

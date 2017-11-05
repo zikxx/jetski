@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/jetski.iml" filepath="$PROJECT_DIR$/.idea/jetski.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tcmai/.idea/tcmai.iml" filepath="$PROJECT_DIR$/../tcmai/.idea/tcmai.iml" />
     </modules>
   </component>
 </project>

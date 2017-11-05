@@ -5,6 +5,14 @@
       <paths name="jetski">
         <serverdata>
           <mappings>
+            <mapping local="$PROJECT_DIR$" web="jetski" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tcmai">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../tcmai" web="/" />
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
