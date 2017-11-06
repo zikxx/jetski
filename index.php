@@ -22,9 +22,9 @@ require("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Centurion%' 
-			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask LIKE 'Wakeboard - Centurion%' 
+			AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -74,9 +74,9 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Mastercraft%' 
-			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask LIKE 'Wakeboard - Mastercraft%' 
+			AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -126,9 +126,9 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id,a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Othello 150HP%' 
-			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+		$res = $conn->prepare("SELECT a.id,a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask LIKE 'Wakeboard - Othello 150HP%' 
+			AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -178,9 +178,9 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.subtask like 'Wakeboard - Othello 200HP%' 
-			and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask LIKE 'Wakeboard - Othello 200HP%' 
+			AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -230,8 +230,8 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.subt
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.name='Windsurfing' and a.start like '" . date("Y-m-d") . "%' 
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.name='Windsurfing' AND a.start LIKE '" . date("Y-m-d") . "%' 
 			ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
@@ -282,8 +282,8 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%' 
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.name='Fishing boat' AND a.start LIKE '" . date("Y-m-d") . "%' 
 			ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
@@ -334,8 +334,8 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 as age, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.name='Yacht' and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.name='Yacht' AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {
@@ -384,12 +384,12 @@ FROM activities a inner join members m on a.last_name = m.last_name where a.name
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status,DATEDIFF(NOW(),m.age)/365 as age
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status,DATEDIFF(NOW(),m.age)/365 AS age
 			, m.weight, m.shoe_size
-FROM activities a inner join members m on a.last_name = m.last_name where a.subtask NOT like 'Wakeboard - Centurion%' 
-			and a.subtask NOT like 'Wakeboard - Mastercraft%'
-	and a.subtask NOT like 'Wakeboard - Othello%' and not a.name='Windsurfing' and 
-			not a.name='Yacht' and not a.name='Fishing boat' and a.start like '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
+FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask NOT LIKE 'Wakeboard - Centurion%' 
+			AND a.subtask NOT LIKE 'Wakeboard - Mastercraft%'
+	AND a.subtask NOT LIKE 'Wakeboard - Othello%' AND NOT a.name='Windsurfing' AND 
+			NOT a.name='Yacht' AND NOT a.name='Fishing boat' AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
 		foreach ($res as $row) {

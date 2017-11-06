@@ -4,7 +4,6 @@ require_once("dbconfig.php");
 $name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
 $submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
 $subtask = filter_var($_POST ['subtask'], FILTER_SANITIZE_STRING);
-$inflatables = filter_var($_POST ['inflatables'], FILTER_SANITIZE_STRING);
 $type = filter_var($_POST ['type'], FILTER_SANITIZE_STRING);
 $member_id = filter_var($_POST ['member_id'], FILTER_SANITIZE_STRING);
 $first_name = filter_var($_POST ['first_name'], FILTER_SANITIZE_STRING);
@@ -16,21 +15,13 @@ $paid_price = filter_var($_POST ['paid_price'], FILTER_SANITIZE_STRING);
 $start = filter_var($_POST ['start'], FILTER_SANITIZE_STRING);
 $paid = filter_var($_POST ['paid'], FILTER_SANITIZE_STRING);
 try {
-	/**
-	 * * echo a message saying we have connected **
-	 */
-
-	/**
-	 * * INSERT data **
-	 */
-	$stmt = $conn->prepare("INSERT INTO activities(name, submenu, subtask, inflatables, type,member_id,first_name,
+	$stmt = $conn->prepare("INSERT INTO activities(name, submenu, subtask, type,member_id,first_name,
 last_name,driver,price,payment,paid_price,start,paid,status)
-	VALUES (:name, :submenu, :subtask,:inflatables,
+	VALUES (:name, :submenu, :subtask,
 	:type,:member_id,:first_name,:last_name,:driver,:price,:payment,:paid_price,:start,:paid, 'Active')");
 	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':submenu', $submenu, PDO::PARAM_STR);
 	$stmt->bindParam(':subtask', $subtask, PDO::PARAM_STR);
-	$stmt->bindParam(':inflatables', $inflatables, PDO::PARAM_STR);
 	$stmt->bindParam(':type', $type, PDO::PARAM_STR);
 	$stmt->bindParam(':member_id', $member_id, PDO::PARAM_STR);
 	$stmt->bindParam(':first_name', $first_name, PDO::PARAM_STR);

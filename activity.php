@@ -31,8 +31,8 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			</select>
 		</div>
 		<div class="radio">
-			<label><input type="radio" value="member" id="member" name="type" required> Member</label><br>
-			<label><input type="radio" value="customer" id="customer" name="type" required> Customer</label>
+			<label><input type="radio" value="Member" id="member" name="type" required> Member</label><br>
+			<label><input type="radio" value="Customer" id="customer" name="type" required> Customer</label>
 		</div>
 		<div id="member_form" class="form-group">
 			<?php
