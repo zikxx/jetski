@@ -44,7 +44,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<select name="member_id" id="member_select" class="form-control">
 				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
-					<option value="<?php echo $row['first_name']; ?>"><?php echo $row['first_name']; ?></option> <?php } ?>
+					<option value="<?php echo $row['id']; ?>"><?php echo $row['first_name']; ?></option> <?php } ?>
 			</select>
 		</div>
 		<div id="customer_form" class="form-group">
@@ -65,7 +65,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<select name="driver" id="driver_select" class="form-control">
 				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
-					<option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
+					<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 			</select>
 		</div>
 	</div>

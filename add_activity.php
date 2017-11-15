@@ -4,21 +4,36 @@ require_once("dbconfig.php");
 $name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
 $submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
 $subtask = filter_var($_POST ['subtask'], FILTER_SANITIZE_STRING);
+if ($subtask == '' || (!isset($_POST ['subtask']))) {
+	$subtask = null;
+}
 $type = filter_var($_POST ['type'], FILTER_SANITIZE_STRING);
 $member_id = filter_var($_POST ['member_id'], FILTER_SANITIZE_STRING);
+if ($member_id == '' || (!isset($_POST ['member_id']))) {
+	$member_id = null;
+}
 $first_name = filter_var($_POST ['first_name'], FILTER_SANITIZE_STRING);
 $last_name = filter_var($_POST ['last_name'], FILTER_SANITIZE_STRING);
 $driver = filter_var($_POST ['driver'], FILTER_SANITIZE_STRING);
+if ($driver == '' || (!isset($_POST ['driver']))) {
+	$driver = null;
+}
 $price = filter_var($_POST ['price'], FILTER_SANITIZE_STRING);
 $payment = filter_var($_POST ['payment'], FILTER_SANITIZE_STRING);
 $paid_price = filter_var($_POST ['paid_price'], FILTER_SANITIZE_STRING);
 $start = filter_var($_POST ['start'], FILTER_SANITIZE_STRING);
 $paid = filter_var($_POST ['paid'], FILTER_SANITIZE_STRING);
+if (isset($_POST ['paid'])) {
+	$paid = 1;
+}
+else {
+	$paid = 0;
+}
 try {
 	$stmt = $conn->prepare("INSERT INTO activities(name, submenu, subtask, type,member_id,first_name,
 last_name,driver,price,payment,paid_price,start,paid,status)
-	VALUES (:name, :submenu, :subtask,
-	:type,:member_id,:first_name,:last_name,:driver,:price,:payment,:paid_price,:start,:paid, 'Active')");
+	VALUES (:name, :submenu, :subtask, :type, :member_id, :first_name, :last_name, :driver, :price,:payment,
+	:paid_price, :start, :paid, 'Active')");
 	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':submenu', $submenu, PDO::PARAM_STR);
 	$stmt->bindParam(':subtask', $subtask, PDO::PARAM_STR);
@@ -40,7 +55,7 @@ last_name,driver,price,payment,paid_price,start,paid,status)
 	echo $e->getMessage();
 }
 $conn = null;
-echo ("Activity created!");
+echo("Activity created!");
 header('refresh:1;activity.php');
 die();
 ?>

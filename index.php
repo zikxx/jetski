@@ -22,7 +22,8 @@ require("head.php");
 			<td>Action</td>
 		</tr>
 		<?php
-		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
+		$res = $conn->prepare("SELECT a.id, a.start, a.end, m.last_name, a.driver,a.type, a.name, a.submenu, 
+a.paid, a.status, DATEDIFF(NOW(),m.age)/365 AS age, m.weight, m.shoe_size
 FROM activities a INNER JOIN members m ON a.last_name = m.last_name WHERE a.subtask LIKE 'Wakeboard - Centurion%' 
 			AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC");
 		$res->fetch(PDO::FETCH_OBJ);
