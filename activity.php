@@ -9,7 +9,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 	<div class="col-md-offset-2 col-md-4" style="color:white;">
 		<div class="form-group">
 			<label>Activity:</label><br>
-			<select name="name" id="activity" class="form-control" onChange="getSubmenu(this.value);">
+			<select name="menu_id" id="activity" class="form-control" onChange="getSubmenu(this.value);" required>
 				<option value=""></option>
 				<?php
 				foreach ($results as $menu) {
@@ -20,13 +20,13 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 		<div class="form-group">
 			<label>Submenu:</label><br/>
-			<select name="submenu" id="submenu" class="form-control" onChange="getSubtask(this.value);">
+			<select name="submenu_id" id="submenu" class="form-control" onChange="getSubtask(this.value);" required>
 				<option value=""></option>
 			</select>
 		</div>
 		<div class="form-group">
 			<label>Subtask:</label><br/>
-			<select name="subtask" id="subtask" class="form-control" onChange="getInflatable(this.value);">
+			<select name="subtask_id" id="subtask" class="form-control">
 				<option value=""></option>
 			</select>
 		</div>
@@ -61,8 +61,8 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			$query->execute();
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>
-			<label><input type="checkbox" id="driver" checked> Driver</label>
-			<select name="driver" id="driver_select" class="form-control">
+			<label><input name="driver_checkbox" type="checkbox" id="driver" checked> Driver</label>
+			<select name="driver_id" id="driver_select" class="form-control">
 				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
 					<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
@@ -101,7 +101,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<input name="paid_price" type="number" class="form-control" required>
 		</div>
 		<div class="form-group">
-			<label><input type="checkbox" name="paid" id="paid"> Paid</label>
+			<label><input type="checkbox" name="paid" id="paid" checked> Paid</label>
 		</div>
 		<div class="input-group date form_datetime" data-link-field="dtp_input1">
 			<input name="start" class="form-control" type="text" value="" readonly>

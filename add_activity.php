@@ -1,28 +1,33 @@
 <?php
 session_start();
 require_once("dbconfig.php");
-$name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
-$submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
-$subtask = filter_var($_POST ['subtask'], FILTER_SANITIZE_STRING);
-if ($subtask == '' || (!isset($_POST ['subtask']))) {
-	$subtask = null;
+$menu_id = filter_var($_POST ['menu_id'], FILTER_SANITIZE_STRING);
+$submenu_id = filter_var($_POST ['submenu_id'], FILTER_SANITIZE_STRING);
+$subtask_id = filter_var($_POST ['subtask_id'], FILTER_SANITIZE_STRING);
+if ($subtask_id == '' || (!isset($_POST ['subtask']))) {
+	$subtask_id = null;
 }
 $type = filter_var($_POST ['type'], FILTER_SANITIZE_STRING);
-$member_id = filter_var($_POST ['member_id'], FILTER_SANITIZE_STRING);
-if ($member_id == '' || (!isset($_POST ['member_id']))) {
+if ($type == "Customer") {
 	$member_id = null;
+	$first_name = filter_var($_POST ['first_name'], FILTER_SANITIZE_STRING);
+	$last_name = filter_var($_POST ['last_name'], FILTER_SANITIZE_STRING);
 }
-$first_name = filter_var($_POST ['first_name'], FILTER_SANITIZE_STRING);
-$last_name = filter_var($_POST ['last_name'], FILTER_SANITIZE_STRING);
-$driver = filter_var($_POST ['driver'], FILTER_SANITIZE_STRING);
-if ($driver == '' || (!isset($_POST ['driver']))) {
-	$driver = null;
+else {
+	$member_id = filter_var($_POST ['member_id'], FILTER_SANITIZE_STRING);
+	$first_name = null;
+	$last_name = null;
+}
+if ($_POST ['driver_checkbox']) {
+	$driver_id = filter_var($_POST ['driver_id'], FILTER_SANITIZE_STRING);
+}
+else {
+	$driver_id = null;
 }
 $price = filter_var($_POST ['price'], FILTER_SANITIZE_STRING);
 $payment = filter_var($_POST ['payment'], FILTER_SANITIZE_STRING);
 $paid_price = filter_var($_POST ['paid_price'], FILTER_SANITIZE_STRING);
 $start = filter_var($_POST ['start'], FILTER_SANITIZE_STRING);
-$paid = filter_var($_POST ['paid'], FILTER_SANITIZE_STRING);
 if (isset($_POST ['paid'])) {
 	$paid = 1;
 }
@@ -30,18 +35,18 @@ else {
 	$paid = 0;
 }
 try {
-	$stmt = $conn->prepare("INSERT INTO activities(name, submenu, subtask, type,member_id,first_name,
-last_name,driver,price,payment,paid_price,start,paid,status)
-	VALUES (:name, :submenu, :subtask, :type, :member_id, :first_name, :last_name, :driver, :price,:payment,
+	$stmt = $conn->prepare("INSERT INTO activities(menu_id, submenu_id, subtask_id, type, member_id, first_name,
+last_name, driver_id, price ,payment, paid_price, start,paid, status)
+	VALUES (:menu_id, :submenu_id, :subtask_id, :type, :member_id, :first_name, :last_name, :driver_id, :price, :payment,
 	:paid_price, :start, :paid, 'Active')");
-	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
-	$stmt->bindParam(':submenu', $submenu, PDO::PARAM_STR);
-	$stmt->bindParam(':subtask', $subtask, PDO::PARAM_STR);
+	$stmt->bindParam(':menu_id', $menu_id, PDO::PARAM_STR);
+	$stmt->bindParam(':submenu_id', $submenu_id, PDO::PARAM_STR);
+	$stmt->bindParam(':subtask_id', $subtask_id, PDO::PARAM_STR);
 	$stmt->bindParam(':type', $type, PDO::PARAM_STR);
 	$stmt->bindParam(':member_id', $member_id, PDO::PARAM_STR);
 	$stmt->bindParam(':first_name', $first_name, PDO::PARAM_STR);
 	$stmt->bindParam(':last_name', $last_name, PDO::PARAM_STR);
-	$stmt->bindParam(':driver', $driver, PDO::PARAM_STR);
+	$stmt->bindParam(':driver_id', $driver_id, PDO::PARAM_STR);
 	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
 	$stmt->bindParam(':payment', $payment, PDO::PARAM_STR);
 	$stmt->bindParam(':paid_price', $paid_price, PDO::PARAM_STR);
@@ -56,6 +61,5 @@ last_name,driver,price,payment,paid_price,start,paid,status)
 }
 $conn = null;
 echo("Activity created!");
-header('refresh:1;activity.php');
 die();
 ?>
