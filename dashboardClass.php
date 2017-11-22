@@ -1,5 +1,5 @@
 <?php
-function table1($name, $where){
+function records($name, $where){
 ?>
 <h2 style="text-align: center; color: white;"><?php echo $name; ?></h2>
 <table class="table" style="text-align: center; color: white;">
@@ -29,7 +29,7 @@ LEFT JOIN submenu sm ON a.submenu_id = sm.id
 LEFT JOIN subtask st ON a.subtask_id = st.id
 LEFT JOIN members mem ON a.member_id = mem.id
 LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name LIKE '" . $where . "' 
+WHERE sm.submenu_name LIKE '" . $where . "%' 
 AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC;");
 		$res->fetch(PDO::FETCH_OBJ);
 		$res->execute();
@@ -82,9 +82,8 @@ AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC;");
 					?>
 					<td><?php echo $disabled; ?></td><?php } ?>
 			</tr> <?php }
-	}
-
 	?>
 </table>
 <hr>
-<br> <br>
+<br> <br><?php }
+	?>
