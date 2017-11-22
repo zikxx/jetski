@@ -1,5 +1,5 @@
 <?php
-function table1($name){
+function table1($name, $where){
 ?>
 <h2 style="text-align: center; color: white;"><?php echo $name; ?></h2>
 <table class="table" style="text-align: center; color: white;">
@@ -19,9 +19,7 @@ function table1($name){
 		<td>Action</td>
 	</tr>
 	<?php
-	}
-	function dashboard($where)
-	{
+	
 		require("dbconfig.php");
 		$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
@@ -90,4 +88,3 @@ AND a.start LIKE '" . date("Y-m-d") . "%' ORDER BY a.start ASC;");
 </table>
 <hr>
 <br> <br>
-}
