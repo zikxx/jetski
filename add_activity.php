@@ -61,5 +61,6 @@ last_name, driver_id, price ,payment, paid_price, start,paid, status)
 }
 $conn = null;
 echo("Activity created!");
+header("Location:index.php");
 die();
 ?>

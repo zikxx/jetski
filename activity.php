@@ -63,7 +63,6 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>
 			<label><input name="driver_checkbox" type="checkbox" id="driver" checked> Driver</label>
 			<select name="driver_id" id="driver_select" class="form-control">
-				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
 					<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 			</select>
