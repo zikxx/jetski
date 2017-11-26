@@ -5,7 +5,7 @@ $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<form action="add_activity.php" method="POST">
+<form action="functions/addActivity.php" method="POST">
 	<div class="col-md-offset-2 col-md-4" style="color:white;">
 		<div class="form-group">
 			<label>Activity:</label><br>

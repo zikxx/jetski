@@ -8,7 +8,7 @@ include("head.php");
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>
-	<a href="new_inventory.php" class="btn btn-default">Add new inventory</a><br>
+	<a href="newInventory.php" class="btn btn-default">Add new inventory</a><br>
 	<table class="table">
 		<h2>Inventory list</h2>
 		<tr style="font-size: 17px;">
@@ -20,8 +20,8 @@ include("head.php");
 		</tr>
 		<?php
 		foreach ($results as $row) {
-			$update = "<a href='update_inventory.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
-			$delete = "<a href='delete_inventory.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
+			$update = "<a href='updateInventory.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
+			$delete = "<a href='functions/deleteInventory.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
 			echo "<tr><td>" . $row ['type'] . "</td>";
 			echo "<td>" . $row ['registration'] . "</td>";
 			echo "<td>" . $row ['other'] . "</td>";

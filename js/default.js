@@ -1,5 +1,5 @@
 document.onreadystatechange = function () {
-    var state = document.readyState
+    var state = document.readyState;
     if (state == 'interactive') {
         document.getElementById('contents').style.visibility = "hidden";
     } else if (state == 'complete') {
@@ -14,7 +14,7 @@ document.onreadystatechange = function () {
 function getSubmenu(val) {
     $.ajax({
         type: "POST",
-        url: "wizard/getSubmenu.php",
+        url: "functions/getSubmenu.php",
         data: 'id=' + val,
         success: function (data) {
             $("#submenu").html(data);
@@ -25,7 +25,7 @@ function getSubmenu(val) {
 function getSubtask(val) {
     $.ajax({
         type: "POST",
-        url: "wizard/getSubtask.php",
+        url: "functions/getSubtask.php",
         data: 'id=' + val,
         success: function (data) {
             $("#subtask").html(data);

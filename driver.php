@@ -8,7 +8,7 @@ include("head.php");
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>
-	<a href="new_driver.php" class="btn btn-default">Add new driver</a><br>
+	<a href="newDriver.php" class="btn btn-default">Add new driver</a><br>
 	<table class="table">
 		<h2>Drivers list</h2>
 		<tr style="font-size: 17px;">
@@ -20,8 +20,8 @@ include("head.php");
 		</tr>
 		<?php
 		foreach ($results as $row) {
-			$update = "<a href='update_driver.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
-			$delete = "<a href='delete_driver.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
+			$update = "<a href='updateDriver.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
+			$delete = "<a href='functions/deleteDriver.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
 			echo "<tr><td>" . $row ['name'] . "</td>";
 			echo "<td>" . $row ['phone'] . "</td>";
 			echo "<td>" . $row ['other'] . "</td>";

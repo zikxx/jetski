@@ -41,7 +41,7 @@ if (isset ($_SESSION ['id'])) {
 	<div class="row">
 		<div class="col-md-offset-4 col-md-4" style="text-align: center;">
 			<h2>Login:</h2>
-			<form method="POST" action="start.php">
+			<form method="POST" action="functions/start.php">
 				<div class="form-group">
 					<label>Username:</label><input type="text" class="form-control"
 												   id="user" name="user">

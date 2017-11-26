@@ -8,7 +8,7 @@ include("head.php");
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);
 	?>
-	<a href="new_member.php" class="btn btn-default">Add new member</a><br>
+	<a href="newMember.php" class="btn btn-default">Add new member</a><br>
 	<table class="table">
 		<h2>Members list</h2>
 		<tr style="font-size: 17px;">
@@ -23,8 +23,8 @@ include("head.php");
 		</tr>
 		<?php
 		foreach ($results as $row) {
-			$update = "<a href='update_member.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
-			$delete = "<a href='delete_member.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
+			$update = "<a href='updateMember.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
+			$delete = "<a href='functions/deleteMember.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
 			echo "<tr><td>" . $row ['first_name'] . "</td>";
 			echo "<td>" . $row ['phone'] . "</td>";
 			echo "<td>" . $row ['size'] . "</td>";

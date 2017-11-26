@@ -34,5 +34,5 @@ if (! isset ( $_SESSION ['id'] )) {
 
 if (isset ( $_SESSION ['id'] )) {
 	?>
-<div class="col-md-offset-1 col-md-10"><?php include"nav_menu.php"?></div>
+<div class="col-md-offset-1 col-md-10"><?php include"navMenu.php"?></div>
 <?php } ?>

@@ -42,7 +42,7 @@ require("head.php");
 							<li><a href="#about/team/sales">Sales</a></li>
 							<li><a href="#about/team/development">Development</a></li>
 							<li>
-								<form action="new_activity.php" method="POST">
+								<form action="newActivity.php" method="POST">
 									<input type="text" id="input1" name="name" value=""></input> <input
 										type="text" id="input2" name="submenu" value=""></input>
 									<button type="submit">ooooo</button>

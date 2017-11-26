@@ -4,7 +4,7 @@ include("head.php");
 <div style="color:white;">
 	<div class="col-md-3" style="text-align: center;">
 		<h2>Add menu</h2>
-		<form method="POST" action="add_menu.php">
+		<form method="POST" action="functions/addMenu.php">
 			<input type="hidden" name="id">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
@@ -16,7 +16,7 @@ include("head.php");
 	</div>
 	<div class="col-md-3" style="text-align: center;">
 		<h2>Add submenu</h2>
-		<form method="POST" action="add_submenu.php">
+		<form method="POST" action="functions/addSubmenu.php">
 			<input type="hidden" name="id">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
@@ -45,7 +45,7 @@ include("head.php");
 	</div>
 	<div class="col-md-3" style="text-align: center;">
 		<h2>Add subtask</h2>
-		<form method="POST" action="add_subtask.php">
+		<form method="POST" action="functions/addSubtask.php">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
 										   name="name">
@@ -77,7 +77,7 @@ include("head.php");
 	</div>
 	<div class="col-md-3" style="text-align: center;">
 		<h2>Add inflatable</h2>
-		<form method="POST" action="add_subtask.php">
+		<form method="POST" action="functions/addSubtask.php">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
 										   name="name">
