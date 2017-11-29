@@ -18,6 +18,7 @@ function getSubmenu(val) {
         data: 'id=' + val,
         success: function (data) {
             $("#submenu").html(data);
+            $("#submenuDuration").html(data);
         }
     });
 }

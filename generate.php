@@ -2,7 +2,7 @@
 include("head.php");
 require("functions/dashboardClass.php");
 ?>
-<form action="functions/generateDaily.php" method="POST">
+<form action="generateDaily.php" method="POST">
 	<div class="col-md-offset-4 col-md-4" style="color:white;">
 		<label>Export data for date:</label>
 		<div class="input-group date form_datetime" data-link-field="dtp_input1">

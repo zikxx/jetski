@@ -1,5 +1,5 @@
 <?php
-require("../head.php");
+require("head.php");
 /**
  * Error reporting
  */
@@ -12,7 +12,7 @@ date_default_timezone_set('Europe/London');
 /**
  * Include PHPExcel
  */
-require_once dirname(__FILE__) . '../phpexcel/Classes/PHPExcel.php';
+require_once dirname(__FILE__) . '/phpexcel/Classes/PHPExcel.php';
 // Create new PHPExcel object
 echo date('H:i:s') . ' Create new PHPExcel object' . EOL;
 $objPHPExcel = new PHPExcel ();
@@ -62,7 +62,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L2', 'Weight')
 	->setCellValue('M2', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size 
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -92,7 +92,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L51', 'Weight')
 	->setCellValue('M51', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size  
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -122,7 +122,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L101', 'Weight')
 	->setCellValue('M101', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size  
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -152,7 +152,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L151', 'Weight')
 	->setCellValue('M151', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size  
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -182,7 +182,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L201', 'Weight')
 	->setCellValue('M201', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size 
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -212,7 +212,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L251', 'Weight')
 	->setCellValue('M251', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size   
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size   
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -242,7 +242,7 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('L301', 'Weight')
 	->setCellValue('M301', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size   
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(DATEDIFF(NOW(),mem.age)/365) AS age, mem.weight, mem.shoe_size   
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -261,7 +261,7 @@ $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A302');
 $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A350', 'Other')->setCellValue('A351', 'Start Time')->setCellValue('B351', 'Finish Time')->setCellValue('C351', 'Surname')->setCellValue('D351', 'Name')->setCellValue('E351', 'Instructor')->setCellValue('F351', 'Payment')->setCellValue('G351', 'Activity')->setCellValue('H351', 'Type')->setCellValue('I351', 'Equipment')->setCellValue('J351', 'Gender')->setCellValue('K351', 'Age')->setCellValue('L351', 'Weight')->setCellValue('M351', 'Shoe Size');
 $sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+ mem.storage_1, mem.gender, mem.storage_1, FLOOR(FLOOR(DATEDIFF(NOW(),mem.age)/365)) AS age, mem.weight, mem.shoe_size  
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
 LEFT JOIN submenu sm ON a.submenu_id = sm.id
@@ -338,6 +338,7 @@ $objPHPExcel->getActiveSheet()->getColumnDimension('J')->setAutoSize(true);
 $objPHPExcel->getActiveSheet()->getColumnDimension('K')->setAutoSize(true);
 $objPHPExcel->getActiveSheet()->getColumnDimension('L')->setAutoSize(true);
 $objPHPExcel->getActiveSheet()->getColumnDimension('M')->setAutoSize(true);
+$objPHPExcel->setActiveSheetIndex(1);
 // Rename
 $objPHPExcel->getActiveSheet()->setTitle('Members');
 // Save Excel 2007 file
@@ -367,4 +368,4 @@ echo date('H:i:s') . ' Peak memory usage: ' . (memory_get_peak_usage(true) / 102
 // Echo done
 echo date('H:i:s') . ' Done writing files' . EOL;
 echo 'Files have been created in ', getcwd(), EOL;
-header("Location:../generate.php");
+header("Location:generate.php");

@@ -45,14 +45,6 @@ function dashboard($name, $date)
 			$update = "<a href='functions/cancel.php?q=" . $row ['id'] . "' class='btn btn-danger'>Cancel</a>";
 			$disabled = "<a class='btn btn-danger disabled'>Cancel</a>";
 			$date1 = date_create($row['start']);
-			if (($row['smDuration']) == null) {
-				$duration = $row['stDuration'];
-			}
-			else {
-				$duration = $row['smDuration'];
-			}
-			date_add($date1, date_interval_create_from_date_string("+ " . $duration . " minutes"));
-			$date = date_format($date1, "Y-m-d H:i:s");
 			$age1 = $row['age'];
 			$age = strtok($age1, '.');
 			if ($row['driver_name'] == null) {
@@ -81,7 +73,7 @@ function dashboard($name, $date)
 			?>
 			<tr>
 				<td><?php echo $row['start']; ?></td>
-				<td><?php echo $date; ?></td>
+				<td><?php echo $row['end']; ?></td>
 				<td><?php echo $last_name; ?></td>
 				<td><?php echo $driver; ?></td>
 				<td><?php echo $row['type']; ?></td>
@@ -110,7 +102,7 @@ function getWakeboard($where, $date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, sm.duration AS smDuration, st.duration AS stDuration, a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
@@ -131,7 +123,7 @@ function getWindsurfing($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, sm.duration AS smDuration, st.duration AS stDuration, a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
@@ -152,7 +144,7 @@ function getFishing($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, sm.duration AS smDuration, st.duration AS stDuration,a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
@@ -173,7 +165,7 @@ function getYahct($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, sm.duration AS smDuration, st.duration AS stDuration, a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
@@ -194,7 +186,7 @@ function getOther($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, sm.duration AS smDuration, st.duration AS stDuration, a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
 d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
 FROM activities a
 JOIN menu m ON a.menu_id = m.id
@@ -210,6 +202,25 @@ WHERE sm.submenu_name NOT LIKE 'Wakeboard - Centurion%'
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
 	return $res;
+}
+
+function getDurationSetEndTime($submenuId, $subtaskId)
+{
+	$conn = new PDO("mysql:host=localhost;dbname=jetski", "root", "");
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$table = "submenu";
+	$id = $submenuId;
+	if ($subtaskId != null) {
+		$table = "subtask";
+		$id = $subtaskId;
+	}
+	$end = $conn->prepare("SELECT duration FROM " . $table . " WHERE id = " . $id . ";");
+	$end->execute();
+	$minutes = $end->fetch(PDO::FETCH_OBJ);
+	foreach ($minutes as $row) {
+		$activityDuration = $row;
+	}
+	return $activityDuration;
 }
 
 ?>
