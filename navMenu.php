@@ -13,7 +13,7 @@
 				<li><a href="driver.php">Drivers</a></li>
 				<li><a href="inventory.php">Inventories</a></li>
 				<li><a href="generate.php">Export</a></li><?php } ?>
-			<li><a href="logout.php">Log out</a></li>
+			<li><a href="functions/logout.php">Log out</a></li>
 		</ul>
 	</div>
 </nav>
