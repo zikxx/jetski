@@ -1,10 +1,11 @@
 <?php
 session_start();
-require_once("../dbconfig.php");
+require_once("dbconfig.php");
+require_once("dashboardClass.php");
 $menu_id = filter_var($_POST ['menu_id'], FILTER_SANITIZE_STRING);
 $submenu_id = filter_var($_POST ['submenu_id'], FILTER_SANITIZE_STRING);
 $subtask_id = filter_var($_POST ['subtask_id'], FILTER_SANITIZE_STRING);
-if ($subtask_id == '' || (!isset($_POST ['subtask']))) {
+if ($subtask_id == '' || (!isset($_POST ['subtask_id']))) {
 	$subtask_id = null;
 }
 $type = filter_var($_POST ['type'], FILTER_SANITIZE_STRING);
@@ -34,11 +35,13 @@ if (isset($_POST ['paid'])) {
 else {
 	$paid = 0;
 }
+$duration = getDurationSetEndTime($submenu_id, $subtask_id);
+echo $endTime = date("Y-m-d H:i:s", strtotime("+" . $duration . " minutes", strtotime($start)));
 try {
 	$stmt = $conn->prepare("INSERT INTO activities(menu_id, submenu_id, subtask_id, type, member_id, first_name,
-last_name, driver_id, price ,payment, paid_price, start,paid, status)
+last_name, driver_id, price ,payment, paid_price, start, end, paid, status)
 	VALUES (:menu_id, :submenu_id, :subtask_id, :type, :member_id, :first_name, :last_name, :driver_id, :price, :payment,
-	:paid_price, :start, :paid, 'Active')");
+	:paid_price, :start, :end, :paid, 'Active')");
 	$stmt->bindParam(':menu_id', $menu_id, PDO::PARAM_STR);
 	$stmt->bindParam(':submenu_id', $submenu_id, PDO::PARAM_STR);
 	$stmt->bindParam(':subtask_id', $subtask_id, PDO::PARAM_STR);
@@ -51,6 +54,7 @@ last_name, driver_id, price ,payment, paid_price, start,paid, status)
 	$stmt->bindParam(':payment', $payment, PDO::PARAM_STR);
 	$stmt->bindParam(':paid_price', $paid_price, PDO::PARAM_STR);
 	$stmt->bindParam(':start', $start, PDO::PARAM_STR);
+	$stmt->bindParam(':end', $endTime, PDO::PARAM_STR);
 	$stmt->bindParam(':paid', $paid, PDO::PARAM_STR);
 	$stmt->execute();
 	/**
