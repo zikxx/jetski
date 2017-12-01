@@ -11,7 +11,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO subtask(subtask_name, submenu_id)
+	$stmt = $conn->prepare("INSERT INTO subtask(subtaskName, submenuId)
 	VALUES (:subtask_name, :submenu_id)");
 	$stmt->bindParam(':subtask_name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':submenu_id', $submenu, PDO::PARAM_STR);

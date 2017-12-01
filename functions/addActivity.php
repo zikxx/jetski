@@ -2,32 +2,32 @@
 session_start();
 require_once("dbconfig.php");
 require_once("dashboardClass.php");
-$menu_id = filter_var($_POST ['menu_id'], FILTER_SANITIZE_STRING);
-$submenu_id = filter_var($_POST ['submenu_id'], FILTER_SANITIZE_STRING);
-$subtask_id = filter_var($_POST ['subtask_id'], FILTER_SANITIZE_STRING);
-if ($subtask_id == '' || (!isset($_POST ['subtask_id']))) {
-	$subtask_id = null;
+$menuId = filter_var($_POST ['menuId'], FILTER_SANITIZE_STRING);
+$submenuId = filter_var($_POST ['submenuId'], FILTER_SANITIZE_STRING);
+$subtaskId = filter_var($_POST ['subtaskId'], FILTER_SANITIZE_STRING);
+if ($subtaskId == '' || (!isset($_POST ['subtaskId']))) {
+	$subtaskId = null;
 }
 $type = filter_var($_POST ['type'], FILTER_SANITIZE_STRING);
 if ($type == "Customer") {
-	$member_id = null;
-	$first_name = filter_var($_POST ['first_name'], FILTER_SANITIZE_STRING);
-	$last_name = filter_var($_POST ['last_name'], FILTER_SANITIZE_STRING);
+	$memberId = null;
+	$firstName = filter_var($_POST ['firstName'], FILTER_SANITIZE_STRING);
+	$lastName = filter_var($_POST ['lastName'], FILTER_SANITIZE_STRING);
 }
 else {
-	$member_id = filter_var($_POST ['member_id'], FILTER_SANITIZE_STRING);
-	$first_name = null;
-	$last_name = null;
+	$memberId = filter_var($_POST ['memberId'], FILTER_SANITIZE_STRING);
+	$firstName = null;
+	$lastName = null;
 }
 if ($_POST ['driver_checkbox']) {
-	$driver_id = filter_var($_POST ['driver_id'], FILTER_SANITIZE_STRING);
+	$driverId = filter_var($_POST ['driverId'], FILTER_SANITIZE_STRING);
 }
 else {
-	$driver_id = null;
+	$driverId = null;
 }
 $price = filter_var($_POST ['price'], FILTER_SANITIZE_STRING);
 $payment = filter_var($_POST ['payment'], FILTER_SANITIZE_STRING);
-$paid_price = filter_var($_POST ['paid_price'], FILTER_SANITIZE_STRING);
+$paidPrice = filter_var($_POST ['paidPrice'], FILTER_SANITIZE_STRING);
 $start = filter_var($_POST ['start'], FILTER_SANITIZE_STRING);
 if (isset($_POST ['paid'])) {
 	$paid = 1;
@@ -35,24 +35,24 @@ if (isset($_POST ['paid'])) {
 else {
 	$paid = 0;
 }
-$duration = getDurationSetEndTime($submenu_id, $subtask_id);
+$duration = getDurationSetEndTime($submenuId, $subtaskId);
 echo $endTime = date("Y-m-d H:i:s", strtotime("+" . $duration . " minutes", strtotime($start)));
 try {
-	$stmt = $conn->prepare("INSERT INTO activities(menu_id, submenu_id, subtask_id, type, member_id, first_name,
-last_name, driver_id, price ,payment, paid_price, start, end, paid, status)
-	VALUES (:menu_id, :submenu_id, :subtask_id, :type, :member_id, :first_name, :last_name, :driver_id, :price, :payment,
-	:paid_price, :start, :end, :paid, 'Active')");
-	$stmt->bindParam(':menu_id', $menu_id, PDO::PARAM_STR);
-	$stmt->bindParam(':submenu_id', $submenu_id, PDO::PARAM_STR);
-	$stmt->bindParam(':subtask_id', $subtask_id, PDO::PARAM_STR);
+	$stmt = $conn->prepare("INSERT INTO activities(menuId, submenuId, subtaskId, type, memberId, firstName,
+lastName, driverId, price ,payment, paidPrice, start, end, paid, status)
+	VALUES (:menuId, :submenuId, :subtaskId, :type, :memberId, :firstName, :lastName, :driverId, :price, :payment,
+	:paidPrice, :start, :end, :paid, 'Active')");
+	$stmt->bindParam(':menuId', $menuId, PDO::PARAM_STR);
+	$stmt->bindParam(':submenuId', $submenuId, PDO::PARAM_STR);
+	$stmt->bindParam(':subtaskId', $subtaskId, PDO::PARAM_STR);
 	$stmt->bindParam(':type', $type, PDO::PARAM_STR);
-	$stmt->bindParam(':member_id', $member_id, PDO::PARAM_STR);
-	$stmt->bindParam(':first_name', $first_name, PDO::PARAM_STR);
-	$stmt->bindParam(':last_name', $last_name, PDO::PARAM_STR);
-	$stmt->bindParam(':driver_id', $driver_id, PDO::PARAM_STR);
+	$stmt->bindParam(':memberId', $memberId, PDO::PARAM_STR);
+	$stmt->bindParam(':firstName', $firstName, PDO::PARAM_STR);
+	$stmt->bindParam(':lastName', $lastName, PDO::PARAM_STR);
+	$stmt->bindParam(':driverId', $driverId, PDO::PARAM_STR);
 	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
 	$stmt->bindParam(':payment', $payment, PDO::PARAM_STR);
-	$stmt->bindParam(':paid_price', $paid_price, PDO::PARAM_STR);
+	$stmt->bindParam(':paidPrice', $paidPrice, PDO::PARAM_STR);
 	$stmt->bindParam(':start', $start, PDO::PARAM_STR);
 	$stmt->bindParam(':end', $endTime, PDO::PARAM_STR);
 	$stmt->bindParam(':paid', $paid, PDO::PARAM_STR);

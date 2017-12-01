@@ -1,5 +1,5 @@
 <?php
-require("../head.php");
+require("head.php");
 /**
  * Error reporting
  */
@@ -61,15 +61,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K2', 'Age')
 	->setCellValue('L2', 'Weight')
 	->setCellValue('M2', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size 
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name LIKE 'Wakeboard - Centurion - %' 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName LIKE 'Wakeboard - Centurion - %' 
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -91,15 +91,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K51', 'Age')
 	->setCellValue('L51', 'Weight')
 	->setCellValue('M51', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize  
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name LIKE 'Wakeboard - Centurion / Mastercraft%' 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName LIKE 'Wakeboard - Centurion / Mastercraft%' 
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -121,15 +121,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K101', 'Age')
 	->setCellValue('L101', 'Weight')
 	->setCellValue('M101', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize  
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name LIKE 'Wakeboard - Othello%' 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName LIKE 'Wakeboard - Othello%' 
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -151,15 +151,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K151', 'Age')
 	->setCellValue('L151', 'Weight')
 	->setCellValue('M151', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize  
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 21 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 21 
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -181,15 +181,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K201', 'Age')
 	->setCellValue('L201', 'Weight')
 	->setCellValue('M201', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size 
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 30
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 30
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -211,15 +211,15 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K251', 'Age')
 	->setCellValue('L251', 'Weight')
 	->setCellValue('M251', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size   
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize   
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 31 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 31 
 AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -241,18 +241,18 @@ $objPHPExcel->getActiveSheet()
 	->setCellValue('K301', 'Age')
 	->setCellValue('L301', 'Weight')
 	->setCellValue('M301', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size   
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize   
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name NOT LIKE 'Wakeboard - Centurion%' 
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Mastercraft%'
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menu_id = 21
-	AND NOT sm.menu_id = 30 AND NOT sm.menu_id = 31 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName NOT LIKE 'Wakeboard - Centurion%' 
+	AND sm.submenuName NOT LIKE 'Wakeboard - Mastercraft%'
+	AND sm.submenuName NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menuId = 21
+	AND NOT sm.menuId = 30 AND NOT sm.menuId = 31 
 	AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -260,18 +260,18 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 $objPHPExcel->getActiveSheet()->fromArray($results, NULL, 'A302');
 $objPHPExcel->setActiveSheetIndex(0);
 $objPHPExcel->getActiveSheet()->setCellValue('A350', 'Other')->setCellValue('A351', 'Start Time')->setCellValue('B351', 'Finish Time')->setCellValue('C351', 'Surname')->setCellValue('D351', 'Name')->setCellValue('E351', 'Instructor')->setCellValue('F351', 'Payment')->setCellValue('G351', 'Activity')->setCellValue('H351', 'Type')->setCellValue('I351', 'Equipment')->setCellValue('J351', 'Gender')->setCellValue('K351', 'Age')->setCellValue('L351', 'Weight')->setCellValue('M351', 'Shoe Size');
-$sql = ("SELECT a.start, a.end, a.last_name, a.first_name, d.name, a.payment, m.menu_name, sm.submenu_name,
- mem.storage_1, mem.gender, mem.storage_1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size  
+$sql = ("SELECT a.start, a.end, a.lastName, a.firstName, d.name, a.payment, m.menuName, sm.submenuName,
+ mem.storage1, mem.gender, mem.storage1, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize  
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name NOT LIKE 'Wakeboard - Centurion%' 
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Mastercraft%'
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menu_id = 21
-	AND NOT sm.menu_id = 30 AND NOT sm.menu_id = 31 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName NOT LIKE 'Wakeboard - Centurion%' 
+	AND sm.submenuName NOT LIKE 'Wakeboard - Mastercraft%'
+	AND sm.submenuName NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menuId = 21
+	AND NOT sm.menuId = 30 AND NOT sm.menuId = 31 
 	AND a.start LIKE '" . $start . "%' ORDER BY a.start ASC;");
 $query = $conn->prepare($sql);
 $query->execute();
@@ -300,10 +300,10 @@ echo date('H:i:s') . ' Set autofilter' . EOL;
 // New worksheet
 echo date('H:i:s'), " Clone worksheet", EOL;
 $objPHPExcel->createSheet();
-$sql = ("SELECT m.first_name, m.last_name, m.status, m.phone, m.emergency_contact, m.address, m.email, 
-m.storage_1, m.storage_2, m.storage_3 FROM activities a
-INNER JOIN members m ON a.member_id = m.id
-WHERE a.member_id <> '' AND a.start LIKE '" . $start . "%' ORDER BY a.start");
+$sql = ("SELECT m.firstName, m.lastName, m.status, m.phone, m.emergencyContact, m.address, m.email, 
+m.storage1, m.storage2, m.storage3 FROM activities a
+INNER JOIN members m ON a.memberId = m.id
+WHERE a.memberId <> '' AND a.start LIKE '" . $start . "%' ORDER BY a.start");
 $query = $conn->prepare($sql);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -367,4 +367,4 @@ echo date('H:i:s') . ' Peak memory usage: ' . (memory_get_peak_usage(true) / 102
 // Echo done
 echo date('H:i:s') . ' Done writing files' . EOL;
 echo 'Files have been created in ', getcwd(), EOL;
-header("Location:../generate.php");
+header("Location:generate.php");

@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../pics/loading.gif") no-repeat center center rgba(36, 51, 66, 1);
 }
 
-#customer_form, #member_form {
+#customerForm, #memberForm {
     display: none;
 }
 

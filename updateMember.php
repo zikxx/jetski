@@ -17,7 +17,7 @@ include("head.php");
 			<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
-										   name="first_name" value="<?php echo $row['first_name']; ?>">
+										   name="firstName" value="<?php echo $row['firstName']; ?>">
 			</div>
 			<div class="form-group">
 				<label>Phone:</label><input name="phone" id="text"
@@ -33,7 +33,7 @@ include("head.php");
 			</div>
 			<div class="form-group">
 				<label>Shoe size:</label><input type="text" class="form-control"
-												name="shoe_size" value="<?php echo $row['shoe_size']; ?>">
+												name="shoeSize" value="<?php echo $row['shoeSize']; ?>">
 			</div>
 			<div class="form-group">
 				<label>Other:</label><input name="other" id="other"

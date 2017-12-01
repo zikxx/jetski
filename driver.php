@@ -3,7 +3,7 @@ include("head.php");
 ?>
 <div class="col-md-offset-2 col-md-8 pages">
 	<?php
-	$sql = "SELECT * FROM drivers_shippers ORDER BY id";
+	$sql = "SELECT * FROM driversShippers ORDER BY id";
 	$query = $conn->prepare($sql);
 	$query->execute();
 	$results = $query->fetchAll(PDO::FETCH_ASSOC);

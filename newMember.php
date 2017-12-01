@@ -8,10 +8,10 @@ include("head.php");
 		<div class="col-md-3">
 			<div class="form-group">
 				<label>Name:</label><input type="text" class="form-control"
-										   name="first_name" required>
+										   name="firstName" required>
 			</div>
 			<div class="form-group">
-				<label>Last name:</label><input name="last_name" id="text"
+				<label>Last name:</label><input name="lastName" id="text"
 												class="form-control" required>
 			</div>
 			<div class="form-group">
@@ -26,7 +26,7 @@ include("head.php");
 											 name="gender">
 			</div>
 			<div class="form-group">
-				<label>Shoe size:</label><input name="shoe_size" id="other"
+				<label>Shoe size:</label><input name="shoeSize" id="other"
 												class="form-control">
 			</div>
 		</div>
@@ -48,7 +48,7 @@ include("head.php");
 											 class="form-control">
 			</div>
 			<div class="form-group">
-				<label>Emergency contact:</label><input name="emergency_contact"
+				<label>Emergency contact:</label><input name="emergencyContact"
 														id="other" class="form-control">
 			</div>
 			<div class="form-group">
@@ -62,15 +62,15 @@ include("head.php");
 		</div>
 		<div class="col-md-offset-1 col-md-3">
 			<div class="form-group">
-				<label>Storage 1:</label><input name="storage_1" id="other"
+				<label>Storage 1:</label><input name="storage1" id="other"
 												class="form-control">
 			</div>
 			<div class="form-group">
-				<label>Storage 2:</label><input name="storage_2" id="other"
+				<label>Storage 2:</label><input name="storage2" id="other"
 												class="form-control">
 			</div>
 			<div class="form-group">
-				<label>Storage 3:</label><input name="storage_3" id="other"
+				<label>Storage 3:</label><input name="storage3" id="other"
 												class="form-control">
 			</div>
 			<div class="form-group">

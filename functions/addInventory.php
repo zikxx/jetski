@@ -26,6 +26,6 @@ try {
 	$conn = null;
 } catch (PDOException $e) {
 }
-//header("Location:../inventory.php");
+header("Location:../inventory.php");
 die ();
 ?>

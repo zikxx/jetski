@@ -13,11 +13,11 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO shop(comment, price, date, shop_other)
-	VALUES (:comment, :price, :date, :shop_other)");
+	$stmt = $conn->prepare("INSERT INTO shop(comment, price, date, shopOther)
+	VALUES (:comment, :price, :date, :shopOther)");
 	$stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
 	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
-	$stmt->bindParam(':shop_other', $shop, PDO::PARAM_STR);
+	$stmt->bindParam(':shopOther', $shop, PDO::PARAM_STR);
 	$stmt->bindParam(':date', $date, PDO::PARAM_STR);
 	$stmt->execute();
 	$id = $stmt->fetchAll();

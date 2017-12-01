@@ -47,22 +47,22 @@ function dashboard($name, $date)
 			$date1 = date_create($row['start']);
 			$age1 = $row['age'];
 			$age = strtok($age1, '.');
-			if ($row['driver_name'] == null) {
+			if ($row['driverName'] == null) {
 				$driver = "/";
 			}
 			else {
-				$driver = $row['driver_name'];
+				$driver = $row['driverName'];
 			}
 			if ($row['type'] === "Member") {
-				$last_name = $row['member_lastname'];
+				$lastName = $row['memberLastname'];
 				$weight = $row['weight'];
-				$shoe_size = $row['shoe_size'];
+				$shoeSize = $row['shoeSize'];
 			}
 			else {
-				$last_name = $row['customer_lastname'];
+				$lastName = $row['customerLastname'];
 				$weight = "/";
 				$age = "/";
-				$shoe_size = "/";
+				$shoeSize = "/";
 			}
 			if ($row['paid'] == 1) {
 				$paid = "Yes";
@@ -74,15 +74,15 @@ function dashboard($name, $date)
 			<tr>
 				<td><?php echo $row['start']; ?></td>
 				<td><?php echo $row['end']; ?></td>
-				<td><?php echo $last_name; ?></td>
+				<td><?php echo $lastName; ?></td>
 				<td><?php echo $driver; ?></td>
 				<td><?php echo $row['type']; ?></td>
-				<td><?php echo $row['menu_name']; ?></td>
-				<td><?php echo $row['submenu_name']; ?></td>
+				<td><?php echo $row['menuName']; ?></td>
+				<td><?php echo $row['submenuName']; ?></td>
 				<td><?php echo $paid; ?></td>
 				<td><?php echo $weight; ?></td>
 				<td><?php echo $age; ?></td>
-				<td><?php echo $shoe_size; ?></td>
+				<td><?php echo $shoeSize; ?></td>
 				<td><?php echo $row['status']; ?></td>
 				<?php if ($row['status'] == "Active") { ?>
 					<td><?php echo $update; ?></td><?php
@@ -102,15 +102,15 @@ function getWakeboard($where, $date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
-d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.lastName AS memberLastname, a.lastName AS customerLastname, 
+d.name AS driverName, a.type, m.menuName, sm.submenuName, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize, a.status 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name LIKE '" . $where . "%' 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName LIKE '" . $where . "%' 
 AND a.start LIKE '" . $date . "%' ORDER BY a.start ASC;");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
@@ -123,15 +123,15 @@ function getWindsurfing($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
-d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.lastName AS memberLastname, a.lastName AS customerLastname, 
+d.name AS driverName, a.type, m.menuName, sm.submenuName, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize, a.status 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 21 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 21 
 AND a.start LIKE '" . $date . "%' ORDER BY a.start ASC;");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
@@ -144,15 +144,15 @@ function getFishing($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
-d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.lastName AS memberLastname, a.lastName AS customerLastname, 
+d.name AS driverName, a.type, m.menuName, sm.submenuName, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize, a.status 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 30
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 30
 AND a.start LIKE '" . $date . "%' ORDER BY a.start ASC;");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
@@ -165,15 +165,15 @@ function getYahct($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
-d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.lastName AS memberLastname, a.lastName AS customerLastname, 
+d.name AS driverName, a.type, m.menuName, sm.submenuName, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize, a.status 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.menu_id = 31
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.menuId = 31
 AND a.start LIKE '" . $date . "%' ORDER BY a.start ASC;");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();
@@ -186,18 +186,18 @@ function getOther($date)
 	if ($date == '') {
 		$date = date("Y-m-d");
 	}
-	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.last_name AS member_lastname, a.last_name AS customer_lastname, 
-d.name AS driver_name, a.type, m.menu_name, sm.submenu_name, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoe_size, a.status 
+	$res = $conn->prepare("SELECT a.id, a.start, a.end, mem.lastName AS memberLastname, a.lastName AS customerLastname, 
+d.name AS driverName, a.type, m.menuName, sm.submenuName, a.paid, DATEDIFF(NOW(),mem.age)/365 AS age, mem.weight, mem.shoeSize, a.status 
 FROM activities a
-JOIN menu m ON a.menu_id = m.id
-LEFT JOIN submenu sm ON a.submenu_id = sm.id
-LEFT JOIN subtask st ON a.subtask_id = st.id
-LEFT JOIN members mem ON a.member_id = mem.id
-LEFT JOIN drivers_shippers d ON a.driver_id = d.id
-WHERE sm.submenu_name NOT LIKE 'Wakeboard - Centurion%' 
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Mastercraft%'
-	AND sm.submenu_name NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menu_id = 21
-	AND NOT sm.menu_id = 30 AND NOT sm.menu_id = 31 
+JOIN menu m ON a.menuId = m.id
+LEFT JOIN submenu sm ON a.submenuId = sm.id
+LEFT JOIN subtask st ON a.subtaskId = st.id
+LEFT JOIN members mem ON a.memberId = mem.id
+LEFT JOIN driversShippers d ON a.driverId = d.id
+WHERE sm.submenuName NOT LIKE 'Wakeboard - Centurion%' 
+	AND sm.submenuName NOT LIKE 'Wakeboard - Mastercraft%'
+	AND sm.submenuName NOT LIKE 'Wakeboard - Othello%' AND NOT sm.menuId = 21
+	AND NOT sm.menuId = 30 AND NOT sm.menuId = 31 
 	AND a.start LIKE '" . $date . "%' ORDER BY a.start ASC;");
 	$res->fetch(PDO::FETCH_OBJ);
 	$res->execute();

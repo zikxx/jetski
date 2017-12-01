@@ -11,7 +11,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO submenu(submenu_name, menu_id)
+	$stmt = $conn->prepare("INSERT INTO submenu(submenuName, menuId)
 	VALUES (:submenu_name, :menu_id)");
 	$stmt->bindParam(':submenu_name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':menu_id', $menu, PDO::PARAM_STR);

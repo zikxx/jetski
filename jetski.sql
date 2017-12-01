@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS `customers` (
 -- Dumping data for table `customers`
 --
 
-INSERT INTO `customers` (`id`, `name`, `phone`, `agreement_no`, `other`, `reg_date`) VALUES
+INSERT INTO `customers` (`id`, `name`, `phone`, agreementNo, `other`, regDate) VALUES
 (1, 'Barolina Elena', '97777063', 1, '', '2017-02-28 00:00:00'),
 (2, 'Exodus', '01154789', 666, 'Brain dead', '2017-03-09 20:50:49');
 
@@ -87,7 +87,7 @@ INSERT INTO `customers` (`id`, `name`, `phone`, `agreement_no`, `other`, `reg_da
 -- Table structure for table `drivers_shippers`
 --
 
-DROP TABLE IF EXISTS `drivers_shippers`;
+DROP TABLE IF EXISTS driversShippers;
 CREATE TABLE IF NOT EXISTS `drivers_shippers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `drivers_shippers` (
 -- Dumping data for table `drivers_shippers`
 --
 
-INSERT INTO `drivers_shippers` (`id`, `name`, `phone`, `other`) VALUES
+INSERT INTO driversShippers (`id`, `name`, `phone`, `other`) VALUES
 (1, 'Mirko', '99322583', 'Boat Driver'),
 (2, 'Luca', '96753337', 'Boat Driver'),
 (3, 'Andreas', '99359838', 'Boat Driver'),
@@ -124,7 +124,7 @@ CREATE TABLE IF NOT EXISTS `inflatables` (
 -- Dumping data for table `inflatables`
 --
 
-INSERT INTO `inflatables` (`id`, `inflatable_name`, `subtask_id`) VALUES
+INSERT INTO `inflatables` (`id`, inflatableName, subtaskId) VALUES
 (2, '10 Minutes', NULL),
 (3, '20 Minutes', NULL),
 (4, '30 Minutes', NULL),
@@ -227,7 +227,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 -- Dumping data for table `members`
 --
 
-INSERT INTO `members` (`id`, `first_name`, `last_name`, `phone`, `size`, `gender`, `shoe_size`, `other`, `prepaid`, `used`, `saldo`, `reg_date`, `weight`, `age`, `status`, `emergency_contact`, `address`, `email`, `storage_1`, `storage_2`, `storage_3`) VALUES
+INSERT INTO `members` (`id`, firstName, lastName, `phone`, `size`, `gender`, shoeSize, `other`, `prepaid`, `used`, `saldo`, regDate, `weight`, `age`, `status`, emergencyContact, `address`, `email`, storage1, storage2, storage3) VALUES
 (6, 'Nikola', 'Zivanovic', '064485564', 'L', 'Male', 43, 'Again', NULL, NULL, NULL, '2017-07-06 19:25:00', 178, '1993-04-24', 'Active', '06544788', 'Sutjeska 76', NULL, NULL, NULL, NULL),
 (9, 'Nesa', 'Radeta', '06655444', 'L', 'Male', 43, 'Updated', 600, NULL, NULL, '2017-07-06 19:09:42', 177, '1969-06-30', 'Married', 'Peca', 'KS', '', '', '', '');
 
@@ -248,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`id`, `menu_name`) VALUES
+INSERT INTO `menu` (`id`, menuName) VALUES
 (14, 'Wakeboard'),
 (15, 'Wakesurf'),
 (16, 'Waterski'),
@@ -360,7 +360,7 @@ CREATE TABLE IF NOT EXISTS `shop` (
 -- Dumping data for table `shop`
 --
 
-INSERT INTO `shop` (`id`, `comment`, `price`, `date`, `shop_other`) VALUES
+INSERT INTO `shop` (`id`, `comment`, `price`, `date`, shopOther) VALUES
 (1, 'Ofc', 50, '2017-07-06 20:39:27', 'Shop'),
 (2, 'Ofc', 50, '2017-07-06 20:39:44', 'Other'),
 (3, 'Ofc', 50, '2017-07-08 16:08:25', 'Other');
@@ -386,7 +386,7 @@ CREATE TABLE IF NOT EXISTS `submenu` (
 -- Dumping data for table `submenu`
 --
 
-INSERT INTO `submenu` (`id`, `submenu_name`, `price`, `menu_id`, `duration`) VALUES
+INSERT INTO `submenu` (`id`, submenuName, `price`, menuId, `duration`) VALUES
 (49, 'Wakeboard - Centurion / Mastercraft - 1 tow 15 minutes', 45, 14, 15),
 (50, 'Wakeboard - Othello - 1 tow 15 minutes', 40, 14, 15),
 (51, 'Wakeboard - Centurion - 1 tow 15 minutes', 45, 14, 15),
@@ -473,7 +473,7 @@ CREATE TABLE IF NOT EXISTS `subtask` (
 -- Dumping data for table `subtask`
 --
 
-INSERT INTO `subtask` (`id`, `subtask_name`, `price`, `submenu_id`, `duration`) VALUES
+INSERT INTO `subtask` (`id`, subtaskName, `price`, submenuId, `duration`) VALUES
 (82, 'Introduction hour', 60, 75, 60),
 (83, 'Start windsurfing - 5 Hours course (+ 3 hours rent)', 250, 75, 480),
 (84, 'Windsurfing intermediate (+ 1 hour rent)', 160, 75, 240),
@@ -543,7 +543,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, `reg_date`, `last_login`) VALUES
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, regDate, lastLogin) VALUES
 (2, 'admin', '1964', 'asd', 'admin', '2017-03-11 00:00:00', '2017-03-11 00:00:00'),
 (3, 'STR', '1964', 'asd', 'asd', '2017-07-09 18:00:00', '2017-07-09 18:00:00'),
 (4, 'GRH', '1964', 'asd', 'asd', '2017-07-09 18:00:00', '2017-07-09 18:00:00');
@@ -556,23 +556,23 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`, `reg_date`, 
 -- Constraints for table `activities`
 --
 ALTER TABLE `activities`
-  ADD CONSTRAINT `activities_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`),
-  ADD CONSTRAINT `activities_ibfk_2` FOREIGN KEY (`member_id`) REFERENCES `members` (`id`),
-  ADD CONSTRAINT `activities_ibfk_3` FOREIGN KEY (`submenu_id`) REFERENCES `submenu` (`id`),
-  ADD CONSTRAINT `activities_ibfk_4` FOREIGN KEY (`subtask_id`) REFERENCES `subtask` (`id`),
-  ADD CONSTRAINT `activities_ibfk_5` FOREIGN KEY (`driver_id`) REFERENCES `drivers_shippers` (`id`);
+  ADD CONSTRAINT `activities_ibfk_1` FOREIGN KEY (menuId) REFERENCES `menu` (`id`),
+  ADD CONSTRAINT `activities_ibfk_2` FOREIGN KEY (memberId) REFERENCES `members` (`id`),
+  ADD CONSTRAINT `activities_ibfk_3` FOREIGN KEY (submenuId) REFERENCES `submenu` (`id`),
+  ADD CONSTRAINT `activities_ibfk_4` FOREIGN KEY (subtaskId) REFERENCES `subtask` (`id`),
+  ADD CONSTRAINT `activities_ibfk_5` FOREIGN KEY (driverId) REFERENCES driversShippers (`id`);
 
 --
 -- Constraints for table `submenu`
 --
 ALTER TABLE `submenu`
-  ADD CONSTRAINT `submenu_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`);
+  ADD CONSTRAINT `submenu_ibfk_1` FOREIGN KEY (menuId) REFERENCES `menu` (`id`);
 
 --
 -- Constraints for table `subtask`
 --
 ALTER TABLE `subtask`
-  ADD CONSTRAINT `subtask_ibfk_1` FOREIGN KEY (`submenu_id`) REFERENCES `submenu` (`id`);
+  ADD CONSTRAINT `subtask_ibfk_1` FOREIGN KEY (submenuId) REFERENCES `submenu` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

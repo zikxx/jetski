@@ -35,17 +35,17 @@ function getSubtask(val) {
 
 $(document).ready(function () {
     $("#member").click(function () {
-        $("#member_form").show();
-        $("#customer_form").hide();
-        $("#first_name").val("");
-        $("#last_name").val("");
+        $("#memberForm").show();
+        $("#customerForm").hide();
+        $("#firstName").val("");
+        $("#lastName").val("");
     });
     $("#customer").click(function () {
-        $("#member_form").hide();
-        $("#customer_form").show();
-        $("#member_select").prop('selectedIndex', 0);
+        $("#memberForm").hide();
+        $("#customerForm").show();
+        $("#memberSelect").prop('selectedIndex', 0);
     });
     $("#driver").click(function () {
-        $("#driver_select").toggle().prop('selectedIndex', 0);
+        $("#driverSelect").toggle().prop('selectedIndex', 0);
     });
 });

@@ -18,7 +18,7 @@ include("head.php");
 		<div class="form-group">
 			<label>Agreement/Reference no.</label>
 			<input type="text"
-				   class="form-control" name="agreement_no">
+				   class="form-control" name="agreementNo">
 		</div>
 		<div class="form-group">
 			<label>Other:</label><input name="other" id="other"

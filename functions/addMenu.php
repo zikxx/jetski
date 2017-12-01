@@ -10,7 +10,7 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO menu(menu_name) VALUES (:menu_name)");
+	$stmt = $conn->prepare("INSERT INTO menu(menuName) VALUES (:menu_name)");
 	$stmt->bindParam(':menu_name', $name, PDO::PARAM_STR);
 	$stmt->execute();
 	$id = $stmt->fetchAll();

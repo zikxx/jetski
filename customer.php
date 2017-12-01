@@ -25,7 +25,7 @@ include("head.php");
 			$delete = "<a href='functions/deleteCustomer.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
 			echo "<tr><td>" . $row ['name'] . "</td>";
 			echo "<td>" . $row ['phone'] . "</td>";
-			echo "<td>" . $row ['agreement_no'] . "</td>";
+			echo "<td>" . $row ['agreementNo'] . "</td>";
 			echo "<td>" . $row ['other'] . "</td>";
 			echo "<td>" . $update . "</td>";
 			echo "<td>" . $delete . "</td>";

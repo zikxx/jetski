@@ -11,7 +11,7 @@ include("head.php");
 	$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$stmt->bindParam(':name', $name, PDO::PARAM_STR);
 	$stmt->bindParam(':phone', $phone, PDO::PARAM_STR);
-	$stmt->bindParam(':agreement_no', $other, PDO::PARAM_STR);
+	$stmt->bindParam(':agreementNo', $agreementNo, PDO::PARAM_STR);
 	$stmt->bindParam(':other', $other, PDO::PARAM_STR);
 	?>
 	<form action="functions/updCustomer.php" method="POST">
@@ -28,8 +28,8 @@ include("head.php");
 											class="form-control" value="<?php echo $row['phone']; ?>">
 			</div>
 			<div class="form-group">
-				<label>Agreement/Reference no.</label><input name="agreement_no" id="other"
-															 class="form-control" value="<?php echo $row['agreement_no']; ?>">
+				<label>Agreement/Reference no.</label><input name="agreementNo" id="other"
+															 class="form-control" value="<?php echo $row['agreementNo']; ?>">
 			</div>
 			<div class="form-group">
 				<label>Other:</label><input name="other" id="other"

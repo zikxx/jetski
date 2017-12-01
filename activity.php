@@ -9,24 +9,24 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 	<div class="col-md-offset-2 col-md-4" style="color:white;">
 		<div class="form-group">
 			<label>Activity:</label><br>
-			<select name="menu_id" id="activity" class="form-control" onChange="getSubmenu(this.value);" required>
+			<select name="menuId" id="activity" class="form-control" onChange="getSubmenu(this.value);" required>
 				<option value=""></option>
 				<?php
 				foreach ($results as $menu) {
 					?>
-					<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menu_name"]; ?></option>
+					<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menuName"]; ?></option>
 				<?php } ?>
 			</select>
 		</div>
 		<div class="form-group">
 			<label>Submenu:</label><br/>
-			<select name="submenu_id" id="submenu" class="form-control" onChange="getSubtask(this.value);" required>
+			<select name="submenuId" id="submenu" class="form-control" onChange="getSubtask(this.value);" required>
 				<option value=""></option>
 			</select>
 		</div>
 		<div class="form-group">
 			<label>Subtask:</label><br/>
-			<select name="subtask_id" id="subtask" class="form-control">
+			<select name="subtaskId" id="subtask" class="form-control">
 				<option value=""></option>
 			</select>
 		</div>
@@ -34,35 +34,35 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 			<label><input type="radio" value="Member" id="member" name="type" required> Member</label><br>
 			<label><input type="radio" value="Customer" id="customer" name="type" required> Customer</label>
 		</div>
-		<div id="member_form" class="form-group">
+		<div id="memberForm" class="form-group">
 			<?php
-			$sql = "SELECT * FROM members ORDER BY first_name";
+			$sql = "SELECT * FROM members ORDER BY firstName";
 			$query = $conn->prepare($sql);
 			$query->execute();
 			$results = $query->fetchAll(PDO::FETCH_ASSOC); ?>
 			<label>Member:</label>
-			<select name="member_id" id="member_select" class="form-control">
+			<select name="memberId" id="memberSelect" class="form-control">
 				<option value=""></option>
 				<?php foreach ($results as $row) { ?>
-					<option value="<?php echo $row['id']; ?>"><?php echo $row['first_name']; ?></option> <?php } ?>
+					<option value="<?php echo $row['id']; ?>"><?php echo $row['firstName']; ?></option> <?php } ?>
 			</select>
 		</div>
-		<div id="customer_form" class="form-group">
+		<div id="customerForm" class="form-group">
 			<h4>Customer:</h4>
 			<label>First name:</label><br>
-			<input name="first_name" id="first_name" type="text" value="" class="form-control"><br>
+			<input name="firstName" id="firstName" type="text" value="" class="form-control"><br>
 			<label>Last name:</label><br>
-			<input name="last_name" id="last_name" type="text" value="" class="form-control">
+			<input name="lastName" id="lastName" type="text" value="" class="form-control">
 		</div>
 		<div class="form-group">
 			<?php
-			$sql = "SELECT * FROM drivers_shippers ORDER BY id";
+			$sql = "SELECT * FROM driversShippers ORDER BY id";
 			$query = $conn->prepare($sql);
 			$query->execute();
 			$results = $query->fetchAll(PDO::FETCH_ASSOC);
 			?>
-			<label><input name="driver_checkbox" type="checkbox" id="driver" checked> Driver</label>
-			<select name="driver_id" id="driver_select" class="form-control">
+			<label><input name="driverCheckbox" type="checkbox" id="driver" checked> Driver</label>
+			<select name="driverId" id="driverSelect" class="form-control">
 				<?php foreach ($results as $row) { ?>
 					<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option> <?php } ?>
 			</select>
@@ -97,7 +97,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 		<div class="form-group">
 			<label>Price:</label><br>
-			<input name="paid_price" type="number" class="form-control" required>
+			<input name="paidPrice" type="number" class="form-control" required>
 		</div>
 		<div class="form-group">
 			<label><input type="checkbox" name="paid" id="paid" checked> Paid</label>

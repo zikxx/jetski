@@ -25,11 +25,11 @@ include("head.php");
 		foreach ($results as $row) {
 			$update = "<a href='updateMember.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
 			$delete = "<a href='functions/deleteMember.php?q=" . $row ['id'] . "' class='btn btn-danger'>Delete</a>";
-			echo "<tr><td>" . $row ['first_name'] . "</td>";
+			echo "<tr><td>" . $row ['firstName'] . "</td>";
 			echo "<td>" . $row ['phone'] . "</td>";
 			echo "<td>" . $row ['size'] . "</td>";
 			echo "<td>" . $row ['gender'] . "</td>";
-			echo "<td>" . $row ['shoe_size'] . "</td>";
+			echo "<td>" . $row ['shoeSize'] . "</td>";
 			echo "<td>" . $row ['other'] . "</td>";
 			echo "<td>" . $update . "</td>";
 			echo "<td>" . $delete . "</td>";
