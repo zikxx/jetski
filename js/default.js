@@ -33,6 +33,28 @@ function getSubtask(val) {
     });
 }
 
+function getSubmenuPrice(val) {
+    $.ajax({
+        type: "POST",
+        url: "functions/getSubmenuPrice.php",
+        data: 'id=' + val,
+        success: function (data) {
+            $("#paidPrice").html(data);
+        }
+    });
+}
+
+function getSubtaskPrice(val) {
+    $.ajax({
+        type: "POST",
+        url: "functions/getSubtaskPrice.php",
+        data: 'id=' + val,
+        success: function (data) {
+            $("#paidPrice").html(data);
+        }
+    });
+}
+
 $(document).ready(function () {
     $("#member").click(function () {
         $("#memberForm").show();

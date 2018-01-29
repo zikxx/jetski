@@ -20,13 +20,14 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 		<div class="form-group">
 			<label>Submenu:</label><br/>
-			<select name="submenuId" id="submenu" class="form-control" onChange="getSubtask(this.value);" required>
+			<select name="submenuId" id="submenu" class="form-control"
+					onChange="getSubtask(this.value);getSubmenuPrice(this.value);" required>
 				<option value=""></option>
 			</select>
 		</div>
 		<div class="form-group">
 			<label>Subtask:</label><br/>
-			<select name="subtaskId" id="subtask" class="form-control">
+			<select name="subtaskId" id="subtask" class="form-control" onChange="getSubtaskPrice(this.value);">
 				<option value=""></option>
 			</select>
 		</div>
@@ -97,7 +98,9 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 		</div>
 		<div class="form-group">
 			<label>Price:</label><br>
-			<input name="paidPrice" type="number" class="form-control" required>
+			<select name="paidPrice" id="paidPrice" class="form-control">
+				<option value=""></option>
+			</select>
 		</div>
 		<div class="form-group">
 			<label><input type="checkbox" name="paid" id="paid" checked> Paid</label>
