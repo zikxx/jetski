@@ -1,8 +1,20 @@
 <?php
 session_start();
 require_once("../dbconfig.php");
-$name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
-$menu = filter_var($_POST ['menu'], FILTER_SANITIZE_STRING);
+$submenuName = filter_var($_POST ['submenuName'], FILTER_SANITIZE_STRING);
+if ($_POST ['price'] != "") {
+	$price = filter_var($_POST ['price'], FILTER_SANITIZE_STRING);
+}
+else {
+	$price = null;
+}
+if ($_POST['duration'] != "") {
+	$duration = filter_var($_POST ['duration'], FILTER_SANITIZE_STRING);
+}
+else {
+	$duration = null;
+}
+$menuId = filter_var($_POST ['menuId'], FILTER_SANITIZE_STRING);
 try {
 	/**
 	 * * echo a message saying we have connected **
@@ -11,14 +23,13 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO submenu(submenuName, menuId)
-	VALUES (:submenu_name, :menu_id)");
-	$stmt->bindParam(':submenu_name', $name, PDO::PARAM_STR);
-	$stmt->bindParam(':menu_id', $menu, PDO::PARAM_STR);
+	$stmt = $conn->prepare("INSERT INTO submenu(submenuName, price, duration, menuId)
+	VALUES (:submenuName, :price, :duration, :menuId)");
+	$stmt->bindParam(':submenuName', $submenuName, PDO::PARAM_STR);
+	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
+	$stmt->bindParam(':duration', $duration, PDO::PARAM_STR);
+	$stmt->bindParam(':menuId', $menuId, PDO::PARAM_STR);
 	$stmt->execute();
-	$id = $stmt->fetchAll();
-	$id1 = count($id);
-	echo $id1;
 	/**
 	 * * close the database connection **
 	 */
@@ -26,6 +37,6 @@ try {
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
-header('refresh: 1;../index.php');
+header('Location:../submenu.php');
 die ();
 ?>

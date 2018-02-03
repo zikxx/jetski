@@ -1,120 +1,38 @@
 <?php
-include("head.php");
+/**
+ * Created by PhpStorm.
+ * User: Nikola
+ * Date: 02-Feb-18
+ * Time: 11:06 PM
+ */
+require_once("head.php");
+$sql = "SELECT * FROM menu";
+$query = $conn->prepare($sql);
+$query->execute();
+$results = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<div style="color:white;">
-	<div class="col-md-3" style="text-align: center;">
-		<h2>Add menu</h2>
-		<form method="POST" action="functions/addMenu.php">
-			<input type="hidden" name="id">
-			<div class="form-group">
-				<label>Name:</label><input type="text" class="form-control"
-										   name="name">
-			</div>
-			<a href="index.php" class="btn btn-default">Cancel</a>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
+<div class="col-md-offset-2 col-md-8">
+	<div style="text-align: center;">
+		<a href="newMenu.php" class="btn btn-success">Add new menu</a>
 	</div>
-	<div class="col-md-3" style="text-align: center;">
-		<h2>Add submenu</h2>
-		<form method="POST" action="functions/addSubmenu.php">
-			<input type="hidden" name="id">
-			<div class="form-group">
-				<label>Name:</label><input type="text" class="form-control"
-										   name="name">
-			</div>
-			<div class="form-group">
-				<label>Select parent menu:</label>
-				<?php
-				$sql = "SELECT * FROM menu";
-				$query = $conn->prepare($sql);
-				$query->execute();
-				$results = $query->fetchAll(PDO::FETCH_ASSOC);
-				?>
-				<select name="menu" class="form-control">
-					<?php foreach ($results as $row) { ?>
-						<option value="<?php echo $row['id']; ?>"><?php echo $row['menu_name']; ?></option> <?php } ?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Price:</label><input type="text" class="form-control"
-											name="price">
-			</div>
-			<a href="index.php" class="btn btn-default">Cancel</a>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-	<div class="col-md-3" style="text-align: center;">
-		<h2>Add subtask</h2>
-		<form method="POST" action="functions/addSubtask.php">
-			<div class="form-group">
-				<label>Name:</label><input type="text" class="form-control"
-										   name="name">
-			</div>
-			<div class="form-group">
-				<label>Activity:</label><br>
-				<select name="name" id="activity" class="form-control" onChange="getSubmenu(this.value);">
-					<option value=""></option>
-					<?php
-					foreach ($results as $menu) {
-						?>
-						<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menu_name"]; ?></option>
-					<?php } ?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Submenu:</label><br/>
-				<select name="submenu" id="submenu" class="form-control" onChange="getSubtask(this.value);">
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Price:</label><input type="text" class="form-control"
-											name="name">
-			</div>
-			<a href="index.php" class="btn btn-default">Cancel</a>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-	<div class="col-md-3" style="text-align: center;">
-		<h2>Add inflatable</h2>
-		<form method="POST" action="functions/addSubtask.php">
-			<div class="form-group">
-				<label>Name:</label><input type="text" class="form-control"
-										   name="name">
-			</div>
-			<div class="form-group">
-				<label>Activity:</label><br>
-				<select name="name" id="activity" class="form-control" onChange="getSubmenu(this.value);">
-					<option value=""></option>
-					<?php
-					foreach ($results as $menu) {
-						?>
-						<option value="<?php echo $menu["id"]; ?>"><?php echo $menu["menu_name"]; ?></option>
-					<?php } ?>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Submenu:</label><br/>
-				<select name="submenu" id="submenu" class="form-control" onChange="getSubtask(this.value);">
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Subtask:</label><br/>
-				<select name="subtask" id="subtask" class="form-control" onChange="getInflatable(this.value);">
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Price:</label><input type="text" class="form-control"
-											name="name">
-			</div>
-			<a href="index.php" class="btn btn-default">Cancel</a>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
+	<table class="table" style="color: white;text-align: center;">
+		<h2 align="center">Update / Delete Menu</h2>
+		<br>
+		<tr style="font-size: 17px;">
+			<th style="text-align: center;">Menu name</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<?php
+		foreach ($results as $row) {
+			$update = "<a href='updateMenu.php?q=" . $row ['id'] . "' class='btn btn-info'>Update</a>";
+			$delete = "<a onClick=\"javascript: return confirm('Are you sure to want to delete?');\" 
+			href='functions/deleteMenu.php?q=" . $row['id'] . "' class='btn btn-danger'>Delete</a>";
+			echo "<tr><td>" . $row ['menuName'] . "</td>";
+			echo "<td>" . $update . "</td>";
+			echo "<td>" . $delete . "</td>";
+			echo "</tr>";
+		}
+		?>
+	</table>
 </div>
-</div>
-</div>
-</body>
-</html>

@@ -1,8 +1,10 @@
 <?php
 session_start();
 require_once("../dbconfig.php");
-$name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
-$submenu = filter_var($_POST ['submenu'], FILTER_SANITIZE_STRING);
+$subtaskName = filter_var($_POST ['subtaskName'], FILTER_SANITIZE_STRING);
+$price = filter_var($_POST ['price'], FILTER_SANITIZE_STRING);
+$duration = filter_var($_POST ['duration'], FILTER_SANITIZE_STRING);
+$submenuId = filter_var($_POST ['submenuId'], FILTER_SANITIZE_STRING);
 try {
 	/**
 	 * * echo a message saying we have connected **
@@ -11,14 +13,13 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO subtask(subtaskName, submenuId)
-	VALUES (:subtask_name, :submenu_id)");
-	$stmt->bindParam(':subtask_name', $name, PDO::PARAM_STR);
-	$stmt->bindParam(':submenu_id', $submenu, PDO::PARAM_STR);
+	$stmt = $conn->prepare("INSERT INTO subtask(subtaskName, price, duration, submenuId)
+	VALUES (:subtaskName, :price, :duration, :submenuId)");
+	$stmt->bindParam(':subtaskName', $subtaskName, PDO::PARAM_STR);
+	$stmt->bindParam(':price', $price, PDO::PARAM_STR);
+	$stmt->bindParam(':duration', $duration, PDO::PARAM_STR);
+	$stmt->bindParam(':submenuId', $submenuId, PDO::PARAM_STR);
 	$stmt->execute();
-	$id = $stmt->fetchAll();
-	$id1 = count($id);
-	echo $id1;
 	/**
 	 * * close the database connection **
 	 */
@@ -26,6 +27,6 @@ try {
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
-header('refresh: 1;../index.php');
+header('refresh: 1;../subtask.php');
 die ();
 ?>

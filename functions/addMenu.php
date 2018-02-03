@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("../dbconfig.php");
-$name = filter_var($_POST ['name'], FILTER_SANITIZE_STRING);
+$menuName = filter_var($_POST ['menuName'], FILTER_SANITIZE_STRING);
 try {
 	/**
 	 * * echo a message saying we have connected **
@@ -10,12 +10,9 @@ try {
 	/**
 	 * * INSERT data **
 	 */
-	$stmt = $conn->prepare("INSERT INTO menu(menuName) VALUES (:menu_name)");
-	$stmt->bindParam(':menu_name', $name, PDO::PARAM_STR);
+	$stmt = $conn->prepare("INSERT INTO menu(menuName) VALUES (:menuName)");
+	$stmt->bindParam(':menuName', $menuName, PDO::PARAM_STR);
 	$stmt->execute();
-	$id = $stmt->fetchAll();
-	$id1 = count($id);
-	echo $id1;
 	/**
 	 * * close the database connection **
 	 */
@@ -23,6 +20,6 @@ try {
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
-header('refresh: 1;../index.php');
+header('Location:../menu.php');
 die ();
 ?>
