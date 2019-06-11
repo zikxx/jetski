@@ -31,29 +31,29 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `activities`;
 CREATE TABLE IF NOT EXISTS `activities` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `menu_id` int(11) DEFAULT NULL,
-  `submenu_id` int(11) DEFAULT NULL,
-  `subtask_id` int(11) DEFAULT NULL,
+  `menuId` int(11) DEFAULT NULL,
+  `submenuId` int(11) DEFAULT NULL,
+  `subtaskId` int(11) DEFAULT NULL,
   `payment` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `paid_price` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `paidPrice` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `paid` tinyint(1) DEFAULT NULL,
   `start` datetime DEFAULT NULL,
   `end` datetime DEFAULT NULL,
-  `member_id` int(11) DEFAULT NULL,
-  `first_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `last_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `driver_id` int(11) DEFAULT NULL,
+  `memberId` int(11) DEFAULT NULL,
+  `firstName` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `lastName` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `driverId` int(11) DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `status` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `refund` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `comment` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `name` (`menu_id`),
-  KEY `member_id` (`member_id`),
-  KEY `submenu` (`submenu_id`),
-  KEY `subtask` (`subtask_id`),
-  KEY `driver` (`driver_id`)
+  KEY `name` (`menuId`),
+  KEY `memberId` (`memberId`),
+  KEY `submenu` (`submenuId`),
+  KEY `subtask` (`subtaskId`),
+  KEY `driver` (`driverId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -67,9 +67,9 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `agreement_no` int(11) NOT NULL,
+  `agreementNo` int(11) NOT NULL,
   `other` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `reg_date` datetime NOT NULL,
+  `regDate` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -84,11 +84,11 @@ INSERT INTO `customers` (`id`, `name`, `phone`, agreementNo, `other`, regDate) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `drivers_shippers`
+-- Table structure for table `driversShippers`
 --
 
 DROP TABLE IF EXISTS driversShippers;
-CREATE TABLE IF NOT EXISTS `drivers_shippers` (
+CREATE TABLE IF NOT EXISTS `driversShippers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `drivers_shippers` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `drivers_shippers`
+-- Dumping data for table `driversShippers`
 --
 
 INSERT INTO driversShippers (`id`, `name`, `phone`, `other`) VALUES
@@ -115,8 +115,8 @@ INSERT INTO driversShippers (`id`, `name`, `phone`, `other`) VALUES
 DROP TABLE IF EXISTS `inflatables`;
 CREATE TABLE IF NOT EXISTS `inflatables` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `inflatable_name` varchar(255) DEFAULT NULL,
-  `subtask_id` int(11) DEFAULT NULL,
+  `inflatableName` varchar(255) DEFAULT NULL,
+  `subtaskId` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
@@ -199,28 +199,28 @@ INSERT INTO `inventory` (`id`, `type`, `equipment`, `registration`, `other`) VAL
 DROP TABLE IF EXISTS `members`;
 CREATE TABLE IF NOT EXISTS `members` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `last_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `firstName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `lastName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `phone` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `size` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `gender` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `shoe_size` int(11) DEFAULT NULL,
+  `shoeSize` int(11) DEFAULT NULL,
   `other` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `prepaid` float DEFAULT NULL,
   `used` float DEFAULT NULL,
   `saldo` float DEFAULT NULL,
-  `reg_date` datetime NOT NULL,
+  `regDate` datetime NOT NULL,
   `weight` int(5) DEFAULT NULL,
   `age` date DEFAULT NULL,
   `status` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `emergency_contact` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `emergencyContact` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `storage_1` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `storage_2` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `storage_3` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `storage1` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `storage2` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `storage3` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `last_name` (`last_name`)
+  KEY `lastName` (`lastName`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -240,7 +240,7 @@ INSERT INTO `members` (`id`, firstName, lastName, `phone`, `size`, `gender`, sho
 DROP TABLE IF EXISTS `menu`;
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `menu_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `menuName` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -352,7 +352,7 @@ CREATE TABLE IF NOT EXISTS `shop` (
   `comment` varchar(255) NOT NULL,
   `price` float NOT NULL,
   `date` datetime NOT NULL,
-  `shop_other` varchar(255) NOT NULL,
+  `shopOther` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
@@ -374,12 +374,12 @@ INSERT INTO `shop` (`id`, `comment`, `price`, `date`, shopOther) VALUES
 DROP TABLE IF EXISTS `submenu`;
 CREATE TABLE IF NOT EXISTS `submenu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `submenu_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `submenuName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `price` float DEFAULT NULL,
-  `menu_id` int(11) NOT NULL,
+  `menuId` int(11) NOT NULL,
   `duration` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `menu_id` (`menu_id`)
+  KEY `menuId` (`menuId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -461,12 +461,12 @@ INSERT INTO `submenu` (`id`, submenuName, `price`, menuId, `duration`) VALUES
 DROP TABLE IF EXISTS `subtask`;
 CREATE TABLE IF NOT EXISTS `subtask` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `subtask_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `subtaskName` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `price` float DEFAULT NULL,
-  `submenu_id` int(11) NOT NULL,
+  `submenuId` int(11) NOT NULL,
   `duration` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `submenu_id` (`submenu_id`)
+  KEY `submenuId` (`submenuId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -534,8 +534,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `role` varchar(15) COLLATE utf8_unicode_ci NOT NULL,
-  `reg_date` datetime NOT NULL,
-  `last_login` datetime NOT NULL,
+  `regDate` datetime NOT NULL,
+  `lastLogin` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
